@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:tree="http://www.treeage.com/modeldefs/tree">
+  <tree:Tree xmi:id="_XZBscArAEfCOUb3BA_5I8g">
+    <Node xmi:id="_XZBscQrAEfCOUb3BA_5I8g" NameID="Node1" Label="Medial OA knee individuals" NodeType="DecisionNode">
+      <Definition xmi:id="_XZBscgrAEfCOUb3BA_5I8g" Variable="p_DieAfterPrimaryOperation" Value="ratetoprob(ProbToRate(ForSA_p_DieAfterPrimaryOperation;1/cycleLength);1)" Comment=""/>
+      <Definition xmi:id="_XZBscwrAEfCOUb3BA_5I8g" Variable="ForSA_p_DieAfterPrimaryOperation" Value="0.30%" Comment=""/>
+      <Definition xmi:id="_XZBsdArAEfCOUb3BA_5I8g" Variable="cycleLength" Value="1" Comment=""/>
+      <Definition xmi:id="_XZBsdQrAEfCOUb3BB-5I8g" Variable="ForSA_p_FailAfterPrimaryTKA" Value="3.49%" Comment=""/>
+      <Definition xmi:id="_XZBsdgrAEfCOUb3BB-5I8g" Variable="p_DieAfterFailPrimaryOperation" Value="ratetoprob(ProbToRate(ForSA_p_DieAfterFailPrimaryOperation;1/cycleLength);1)" Comment=""/>
+      <Definition xmi:id="_XZBsdwrAEfCOUb3BB-5I8g" Variable="ForSA_p_DieAfterFailPrimaryOperation" Value="0.27%" Comment=""/>
+      <Definition xmi:id="_XZBseArAEfCOUb3BB-5I8g" Variable="p_FailWithInstabilityTKA" Value="12.4%" Comment=""/>
+      <Definition xmi:id="_XZBseQrAEfCOUb3BB-5I8g" Variable="p_DieAfterRevision" Value="p_DieAfterFailPrimaryOperation" Comment=""/>
+      <Definition xmi:id="_XZBsegrAEfCOUb3BC95I8g" Variable="p_InstabilityAfterRevisionTKA" Value="ratetoprob(ProbToRate(ForSA_p_InstabilityAfterRevisionTKA;61.4/cycleLength);1)" Comment=""/>
+      <Definition xmi:id="_XZBsewrAEfCOUb3BC95I8g" Variable="ForSA_p_InstabilityAfterRevisionTKA" Value="14.2%" Comment=""/>
+      <Definition xmi:id="_XZBsfArAEfCOUb3BC95I8g" Variable="p_FailAfterPrimaryTKA" Value="ratetoprob(ProbToRate(ForSA_p_FailAfterPrimaryTKA;12/cycleLength);1)" Comment=""/>
+      <Definition xmi:id="_XZBsfQrAEfCOUb3BC95I8g" Variable="p_FailAfterPrimaryUKA" Value="ratetoprob(ProbToRate(ForSA_p_FailAfterPrimaryUKA;(8*12)/cycleLength);1)" Comment=""/>
+      <Definition xmi:id="_XZBsfgrAEfCOUb3BC95I8g" Variable="ForSA_p_FailAfterPrimaryUKA" Value="7.54%" Comment=""/>
+      <Definition xmi:id="_XZBsfwrAEfCOUb3BD85I8g" Variable="p_FailWithInstatibilityUKA" Value="6.2%" Comment=""/>
+      <Definition xmi:id="_XZBsgArAEfCOUb3BD85I8g" Variable="p_InstabilityAfterRevisionUKA" Value="ratetoprob(ProbToRate(ForSA_p_InstabilityAfterRevisionUKA;(6.1*12)/cycleLength);1)" Comment=""/>
+      <Definition xmi:id="_XZBsgQrAEfCOUb3BD85I8g" Variable="ForSA_p_InstabilityAfterRevisionUKA" Value="4.1%" Comment=""/>
+      <Definition xmi:id="_XZBsggrAEfCOUb3BD85I8g" Variable="p_FailAfterPrimaryHTO" Value="ratetoprob(ProbToRate(ForSA_p_FailAfterPrimaryHTO;(15*12)/cycleLength);1)" Comment=""/>
+      <Definition xmi:id="_XZBsgwrAEfCOUb3BD85I8g" Variable="ForSA_p_FailAfterPrimaryHTO" Value="45%" Comment=""/>
+      <Definition xmi:id="_XZBshArAEfCOUb3BE75I8g" Variable="p_FailWithInstabilityHTO" Value="9.5%" Comment=""/>
+      <Definition xmi:id="_XZBshQrAEfCOUb3BE75I8g" Variable="DR" Value="1/((1+DiscountRate)^(_stage/12))" Comment=""/>
+      <Definition xmi:id="_XZBshgrAEfCOUb3BE75I8g" Variable="_post_analysis" Value="globalnexport(1;1)+globalnexport(2;2)" Comment=""/>
+      <Definition xmi:id="_XZBshwrAEfCOUb3BE75I8g" Variable="DiscountRate" Value="0.015" Comment=""/>
+      <Definition xmi:id="_XZBsiArAEfCOUb3BE75I8g" Variable="c_meanPhysicianCostForTKA" Value="1146.70" Comment=""/>
+      <Definition xmi:id="_XZBsiQrAEfCOUb3BF65I8g" Variable="c_sdPhysicianCostForTKA" Value="0.2*c_meanPhysicianCostForTKA" Comment=""/>
+      <Definition xmi:id="_XZBsigrAEfCOUb3BF65I8g" Variable="c_meanPhysicianCostForUKA" Value="1067.85" Comment=""/>
+      <Definition xmi:id="_XZBsiwrAEfCOUb3BF65I8g" Variable="c_sdPhysicianCostForUKA" Value="0.2*c_meanPhysicianCostForUKA" Comment=""/>
+      <Definition xmi:id="_XZBsjArAEfCOUb3BF65I8g" Variable="c_meanPhysicianCostForRevision" Value="1299.11" Comment=""/>
+      <Definition xmi:id="_XZBsjQrAEfCOUb3BF65I8g" Variable="c_sdPhysicianCostForRevision" Value="0.2*c_meanPhysicianCostForRevision" Comment=""/>
+      <Definition xmi:id="_XZBsjgrAEfCOUb3BG55I8g" Variable="c_meanPhysicianCostForHTO" Value="950.84" Comment=""/>
+      <Definition xmi:id="_XZBsjwrAEfCOUb3BG55I8g" Variable="c_sdPhysicianCostForHTO" Value="0.2*c_meanPhysicianCostForHTO" Comment=""/>
+      <Definition xmi:id="_XZBskArAEfCOUb3BG55I8g" Variable="p_DieGenPop_startAge45" Value="if(_stage&lt;12; 0.0001526;&#xA;if(_stage&lt;24; 0.0001626;&#xA;if(_stage&lt;36; 0.0001743;&#xA;if(_stage&lt;48; 0.0001869;&#xA;if(_stage&lt;60; 0.0002002;&#xA;if(_stage&lt;72; 0.0002153;&#xA;if(_stage&lt;84; 0.0002328;&#xA;if(_stage&lt;96; 0.0002512;&#xA;if(_stage&lt;108; 0.0002712;&#xA;if(_stage&lt;120; 0.0002938;&#xA;if(_stage&lt;132; 0.0003181;&#xA;if(_stage&lt;144; 0.0003448;&#xA;if(_stage&lt;156; 0.0003749;&#xA;if(_stage&lt;168; 0.0004076;&#xA;if(_stage&lt;180; 0.0004427;&#xA;if(_stage&lt;192; 0.0004821;&#xA;if(_stage&lt;204; 0.0005257;&#xA;if(_stage&lt;216; 0.0005743;&#xA;if(_stage&lt;228; 0.0006272;&#xA;if(_stage&lt;240; 0.0006859;&#xA;if(_stage&lt;252; 0.0007506;&#xA;if(_stage&lt;264; 0.0008229;&#xA;if(_stage&lt;276; 0.0009028;&#xA;if(_stage&lt;288; 0.0009921;&#xA;if(_stage&lt;300; 0.0010907;&#xA;if(_stage&lt;312; 0.0012012;&#xA;if(_stage&lt;324; 0.0013238;&#xA;if(_stage&lt;336; 0.0014600;&#xA;if(_stage&lt;348; 0.0016126;&#xA;if(_stage&lt;360; 0.0017832;&#xA;if(_stage&lt;372; 0.0019746;&#xA;if(_stage&lt;384; 0.0021887;&#xA;if(_stage&lt;396; 0.0024280;&#xA;if(_stage&lt;408; 0.0026980;&#xA;if(_stage&lt;420; 0.0030007;&#xA;if(_stage&lt;432; 0.0033424;&#xA;if(_stage&lt;444; 0.0037271;&#xA;if(_stage&lt;456; 0.0041623;&#xA;if(_stage&lt;468; 0.0046540;&#xA;if(_stage&lt;480; 0.0052109;&#xA;if(_stage&lt;492; 0.0058413;&#xA;if(_stage&lt;504; 0.0065562;&#xA;if(_stage&lt;516; 0.0073667;&#xA;if(_stage&lt;528; 0.0082845;&#xA;if(_stage&lt;540; 0.0093214;&#xA;0.0104895)))))))))))))))))))))))))))))))))))))))))))))" Comment=""/>
+      <Definition xmi:id="_XZBskQrAEfCOUb3BG55I8g" Variable="p_DieMaleOnly_startAge45" Value="if(_stage&lt;12; 0.0001994;&#xA;if(_stage&lt;24; 0.0002119;&#xA;if(_stage&lt;36; 0.0002253;&#xA;if(_stage&lt;48; 0.0002412;&#xA;if(_stage&lt;60; 0.0002579;&#xA;if(_stage&lt;72; 0.0002771;&#xA;if(_stage&lt;84; 0.0002988;&#xA;if(_stage&lt;96; 0.0003214;&#xA;if(_stage&lt;108; 0.0003465;&#xA;if(_stage&lt;120; 0.0003741;&#xA;if(_stage&lt;132; 0.0004051;&#xA;if(_stage&lt;144; 0.0004377;&#xA;if(_stage&lt;156; 0.0004746;&#xA;if(_stage&lt;168; 0.0005148;&#xA;if(_stage&lt;180; 0.0005584;&#xA;if(_stage&lt;192; 0.0006070;&#xA;if(_stage&lt;204; 0.0006599;&#xA;if(_stage&lt;216; 0.0007187;&#xA;if(_stage&lt;228; 0.0007842;&#xA;if(_stage&lt;240; 0.0008557;&#xA;if(_stage&lt;252; 0.0009348;&#xA;if(_stage&lt;264; 0.0010224;&#xA;if(_stage&lt;276; 0.0011202;&#xA;if(_stage&lt;288; 0.0012274;&#xA;if(_stage&lt;300; 0.0013474;&#xA;if(_stage&lt;312; 0.0014803;&#xA;if(_stage&lt;324; 0.0016287;&#xA;if(_stage&lt;336; 0.0017934;&#xA;if(_stage&lt;348; 0.0019772;&#xA;if(_stage&lt;360; 0.0021827;&#xA;if(_stage&lt;372; 0.0024126;&#xA;if(_stage&lt;384; 0.0026688;&#xA;if(_stage&lt;396; 0.0029568;&#xA;if(_stage&lt;408; 0.0032793;&#xA;if(_stage&lt;420; 0.0036421;&#xA;if(_stage&lt;432; 0.0040507;&#xA;if(_stage&lt;444; 0.0045111;&#xA;if(_stage&lt;456; 0.0050302;&#xA;if(_stage&lt;468; 0.0056170;&#xA;if(_stage&lt;480; 0.0062817;&#xA;if(_stage&lt;492; 0.0070365;&#xA;if(_stage&lt;504; 0.0078946;&#xA;if(_stage&lt;516; 0.0088711;&#xA;if(_stage&lt;528; 0.0099835;&#xA;if(_stage&lt;540; 0.0112511;&#xA;0.0126932)))))))))))))))))))))))))))))))))))))))))))))" Comment=""/>
+      <Definition xmi:id="_XZBskgrAEfCOUb3BG55I8g" Variable="p_DieFemaleOnly_startAge45" Value="if(_stage&lt;12; 0.0001092;&#xA;if(_stage&lt;24; 0.0001167;&#xA;if(_stage&lt;36; 0.0001251;&#xA;if(_stage&lt;48; 0.0001351;&#xA;if(_stage&lt;60; 0.0001451;&#xA;if(_stage&lt;72; 0.0001568;&#xA;if(_stage&lt;84; 0.0001693;&#xA;if(_stage&lt;96; 0.0001835;&#xA;if(_stage&lt;108; 0.0001994;&#xA;if(_stage&lt;120; 0.0002161;&#xA;if(_stage&lt;132; 0.0002353;&#xA;if(_stage&lt;144; 0.0002554;&#xA;if(_stage&lt;156; 0.0002788;&#xA;if(_stage&lt;168; 0.0003038;&#xA;if(_stage&lt;180; 0.0003314;&#xA;if(_stage&lt;192; 0.0003624;&#xA;if(_stage&lt;204; 0.0003967;&#xA;if(_stage&lt;216; 0.0004344;&#xA;if(_stage&lt;228; 0.0004762;&#xA;if(_stage&lt;240; 0.0005232;&#xA;if(_stage&lt;252; 0.0005751;&#xA;if(_stage&lt;264; 0.0006339;&#xA;if(_stage&lt;276; 0.0006985;&#xA;if(_stage&lt;288; 0.0007708;&#xA;if(_stage&lt;300; 0.0008515;&#xA;if(_stage&lt;312; 0.0009424;&#xA;if(_stage&lt;324; 0.0010435;&#xA;if(_stage&lt;336; 0.0011573;&#xA;if(_stage&lt;348; 0.0012849;&#xA;if(_stage&lt;360; 0.0014287;&#xA;if(_stage&lt;372; 0.0015905;&#xA;if(_stage&lt;384; 0.0017730;&#xA;if(_stage&lt;396; 0.0019780;&#xA;if(_stage&lt;408; 0.0022109;&#xA;if(_stage&lt;420; 0.0024742;&#xA;if(_stage&lt;432; 0.0027719;&#xA;if(_stage&lt;444; 0.0031110;&#xA;if(_stage&lt;456; 0.0034956;&#xA;if(_stage&lt;468; 0.0039331;&#xA;if(_stage&lt;480; 0.0044332;&#xA;if(_stage&lt;492; 0.0050059;&#xA;if(_stage&lt;504; 0.0056625;&#xA;if(_stage&lt;516; 0.0064141;&#xA;if(_stage&lt;528; 0.0072738;&#xA;if(_stage&lt;540; 0.0082543;&#xA;0.0093668)))))))))))))))))))))))))))))))))))))))))))))" Comment=""/>
+      <Definition xmi:id="_XZBskwrAEfCOUb3BH45I8g" Variable="c_InitialCostTKA" Value="d_c_TKA" Comment=""/>
+      <Definition xmi:id="_XZBslArAEfCOUb3BH45I8g" Variable="c_InitialCostUKA" Value="d_c_UKA" Comment=""/>
+      <Definition xmi:id="_XZBslQrAEfCOUb3BH45I8g" Variable="c_InitialCostRevisionByPrimaryTKA" Value="d_c_CJRRcostPrimaryTKA" Comment=""/>
+      <Definition xmi:id="_XZBslgrAEfCOUb3BH45I8g" Variable="c_InitialCostRevisionByHighStabilityImplant" Value="d_c_CJRRcostRevisionTKA" Comment=""/>
+      <Definition xmi:id="_XZBslwrAEfCOUb3BH45I8g" Variable="c_PhysicianCostForTKA" Value="d_c_physicianTKAorUKAorHTOtoTKA" Comment=""/>
+      <Definition xmi:id="_XZBsmArAEfCOUb3BI35I8g" Variable="c_PhysicianCostForUKA" Value="d_c_physicianTKAorUKAorHTOtoTKA" Comment=""/>
+      <Definition xmi:id="_XZBsmQrAEfCOUb3BI35I8g" Variable="c_PhysicianCostForRevision" Value="d_c_physicianRevision" Comment=""/>
+      <Definition xmi:id="_XZBsmgrAEfCOUb3BI35I8g" Variable="c_PhysicianCostForMOWHTO" Value="d_c_physicianTKAorUKAorHTOtoTKA" Comment=""/>
+      <Definition xmi:id="_XZBsmwrAEfCOUb3BI35I8g" Variable="c_InitialCostHTO" Value="d_c_HTO" Comment=""/>
+      <Definition xmi:id="_XZBsnArAEfCOUb3BI35I8g" Variable="p_FailWithInstability" Value="35%"/>
+      <Definition xmi:id="_XZBsnQrAEfCOUb3BJ25I8g" Variable="u_FailSurgery_no_instability_meanTKA" Value="0.61" Comment=""/>
+      <Definition xmi:id="_XZBsngrAEfCOUb3BJ25I8g" Variable="u_FailSurgery_no_instability_SDTKA" Value="0.2" Comment=""/>
+      <Definition xmi:id="_XZBsnwrAEfCOUb3BJ25I8g" Variable="u_FailSurgery_with_instability_meanTKA" Value="0.5" Comment=""/>
+      <Definition xmi:id="_XZBsoArAEfCOUb3BJ25I8g" Variable="u_FailSurgery_with_instability_SDTKA" Value="0.3" Comment=""/>
+      <Definition xmi:id="_XZBsoQrAEfCOUb3BJ25I8g" Variable="u_WellAfterHighStabilityImplant_mean" Value="0.74" Comment=""/>
+      <Definition xmi:id="_XZBsogrAEfCOUb3BK15I8g" Variable="u_WellAfterHighStabilityImplant_SD" Value="0.18" Comment=""/>
+      <Definition xmi:id="_XZBsowrAEfCOUb3BK15I8g" Variable="u_WellAfterPrimaryOperation_TKA_mean" Value="0.84" Comment=""/>
+      <Definition xmi:id="_XZBspArAEfCOUb3BK15I8g" Variable="u_WellAfterPrimaryOperation_TKA_SD" Value="0.15" Comment=""/>
+      <Definition xmi:id="_XZBspQrAEfCOUb3BK15I8g" Variable="u_WellAfterRevisionByPrimaryTKA_mean" Value="0.772" Comment=""/>
+      <Definition xmi:id="_XZBspgrAEfCOUb3BK15I8g" Variable="u_WellAfterRevisionByPrimaryTKA_SD" Value="u_WellAfterRevisionByPrimaryTKA_mean*0.2" Comment=""/>
+      <Definition xmi:id="_XZBspwrAEfCOUb3BL05I8g" Variable="u_FailSurgery_no_instability_TKA" Value="d_u_FailSurgery_no_instability_TKA" Comment=""/>
+      <Definition xmi:id="_XZBsqArAEfCOUb3BL05I8g" Variable="u_FailSurgery_with_instability_TKA" Value="d_u_FailSurgery_with_instability_TKA" Comment=""/>
+      <Definition xmi:id="_XZBsqQrAEfCOUb3BL05I8g" Variable="u_WellAfterHighStabilityImplant" Value="d_u_WellAfterHighStabilityImplant" Comment=""/>
+      <Definition xmi:id="_XZBsqgrAEfCOUb3BL05I8g" Variable="u_WellAfterPrimaryOperation_TKA" Value="d_u_WellAfterPrimaryOperation_TKA" Comment=""/>
+      <Definition xmi:id="_XZBsqwrAEfCOUb3BL05I8g" Variable="u_WellAfterRevisionByPrimaryTKA" Value="d_u_WellAfterRevisionByPrimaryTKA" Comment=""/>
+      <Definition xmi:id="_XZBsrArAEfCOUb3BMz5I8g" Variable="u_FailSurgery_no_instability_meanUKA" Value="0.69" Comment=""/>
+      <Definition xmi:id="_XZBsrQrAEfCOUb3BMz5I8g" Variable="u_FailSurgery_no_instability_SDUKA" Value="0.14" Comment=""/>
+      <Definition xmi:id="_XZBsrgrAEfCOUb3BMz5I8g" Variable="u_FailSurgery_no_instability_UKA" Value="d_u_FailSurgery_no_instability_UKA" Comment=""/>
+      <Definition xmi:id="_XZBsrwrAEfCOUb3BMz5I8g" Variable="u_WellAfterPrimaryOperation_UKA_mean" Value="0.87" Comment=""/>
+      <Definition xmi:id="_XZBssArAEfCOUb3BMz5I8g" Variable="u_WellAfterPrimaryOperation_UKA_SD" Value="0.13" Comment=""/>
+      <Definition xmi:id="_XZBssQrAEfCOUb3BNy5I8g" Variable="u_WellAfterPrimaryOperation_UKA" Value="d_u_WellAfterPrimaryOperation_UKA" Comment=""/>
+      <Definition xmi:id="_XZBssgrAEfCOUb3BNy5I8g" Variable="u_FailSurgery_no_instability_meanHTO" Value="0.69" Comment=""/>
+      <Definition xmi:id="_XZBsswrAEfCOUb3BNy5I8g" Variable="u_FailSurgery_no_instability_sdHTO" Value="0.14" Comment=""/>
+      <Definition xmi:id="_XZBstArAEfCOUb3BNy5I8g" Variable="u_FailSurgery_no_instability_HTO" Value="d_u_FailSurgery_no_instability_HTO" Comment=""/>
+      <Definition xmi:id="_XZBstQrAEfCOUb3BNy5I8g" Variable="u_WellAfterHighStabilityImplant_HTOmean" Value="0.804" Comment=""/>
+      <Definition xmi:id="_XZBstgrAEfCOUb3BOx5I8g" Variable="u_WellAfterHighStabilityImplant_HTOsd" Value="0.2*0.804" Comment=""/>
+      <Definition xmi:id="_XZBstwrAEfCOUb3BOx5I8g" Variable="u_WellAfterHighStabilityImplant_HTO" Value="d_u_WellAfterHighStabilityImplant_HTO" Comment=""/>
+      <Definition xmi:id="_XZBsuArAEfCOUb3BOx5I8g" Variable="u_WellAfterPrimaryOperation_HTO_mean" Value="0.835" Comment=""/>
+      <Definition xmi:id="_XZBsuQrAEfCOUb3BOx5I8g" Variable="u_WellAfterPrimaryOperation_HTO_sd" Value="0.2*0.835" Comment=""/>
+      <Definition xmi:id="_XZBsugrAEfCOUb3BOx5I8g" Variable="u_WellAfterPrimaryOperation_HTO" Value="d_u_WellAfterPrimaryOperation_HTO" Comment=""/>
+      <Definition xmi:id="_XZBsuwrAEfCOUb3BPw5I8g" Variable="u_WellAfterRevisionByPrimaryTKAforHTO_mean" Value="0.804" Comment=""/>
+      <Definition xmi:id="_XZBsvArAEfCOUb3BPw5I8g" Variable="u_WellAfterRevisionByPrimaryTKAforHTO_sd" Value="0.2*0.804" Comment=""/>
+      <Definition xmi:id="_XZBsvQrAEfCOUb3BPw5I8g" Variable="u_WellAfterRevisionByPrimaryTKAforHTO" Value="d_u_WellAfterRevisionByPrimaryTKAforHTO" Comment=""/>
+      <Node xmi:id="_XZBsvgrAEfCOUb3BPw5I8g" NameID="Node3" Label="TKA" NodeType="MarkovNode" CloneMasterIndex="1" CloneMasterName="Index surgery">
+        <Definition xmi:id="_XZBsvwrAEfCOUb3BPw5I8g" Variable="p_FailWithInstability" Value="p_FailWithInstabilityTKA"/>
+        <Definition xmi:id="_XZBswArAEfCOUb3BQv5I8g" Variable="p_FailAfterPrimaryOperation" Value="p_FailAfterPrimaryTKA"/>
+        <Definition xmi:id="_XZBswQrAEfCOUb3BQv5I8g" Variable="p_InstabilityAfterRevision" Value="p_InstabilityAfterRevisionTKA"/>
+        <Definition xmi:id="_XZBswgrAEfCOUb3BQv5I8g" Variable="p_Die" Value="p_DieGenPop_startAge45"/>
+        <Definition xmi:id="_XZBswwrAEfCOUb3BQv5I8g" Variable="c_physician_RevisionwithPrimaryTKA" Value="c_PhysicianCostForRevision"/>
+        <Definition xmi:id="_XZBsxArAEfCOUb3BQv5I8g" Variable="c_InitialCostPrimaryOperation" Value="c_InitialCostTKA+c_PhysicianCostForTKA"/>
+        <Definition xmi:id="_XZBsxQrAEfCOUb3BRu5I8g" Variable="u_FailSurgery_no_instability" Value="u_FailSurgery_no_instability_TKA" Comment="Konopka et al."/>
+        <Definition xmi:id="_XZBsxgrAEfCOUb3BRu5I8g" Variable="u_FailSurgery_with_instability" Value="u_FailSurgery_with_instability_TKA" Comment="Assume as it worse as PJI, Konopka"/>
+        <Definition xmi:id="_XZBsxwrAEfCOUb3BRu5I8g" Variable="u_WellAfterHighStabilityImplant" Value="u_WellAfterHighStabilityImplant"/>
+        <Definition xmi:id="_XZBsyArAEfCOUb3BRu5I8g" Variable="u_WellAfterPrimaryOperation" Value="u_WellAfterPrimaryOperation_TKA" Comment="Primary total knee arthroplasty, Konopka"/>
+        <Definition xmi:id="_XZBsyQrAEfCOUb3BRu5I8g" Variable="u_WellAfterRevisionByPrimaryTKA" Value="d_u_WellAfterRevisionByPrimaryTKA" Comment="Konopka"/>
+        <Node xmi:id="_XZBsygrAEfCOUb3BSt5I8g" NameID="Node6" Label="Well after primary operation" NodeType="ChanceNode">
+          <Prob xmi:id="_XZBsywrAEfCOUb3BSt5I8g" Value="1"/>
+          <MarkovData xsi:type="tree:MarkovNonAbsorbingStateData" xmi:id="_XZBszArAEfCOUb3BSt5I8g">
+            <StateReward xmi:id="_XZBszQrAEfCOUb3BSt5I8g" Set="1">
+              <Init xmi:id="_XZBszgrAEfCOUb3BSt5I8g" Value="c_InitialCostPrimaryOperation"/>
+              <Incr xmi:id="_XZBszwrAEfCOUb3BTs5I8g" Value="0"/>
+              <Final xmi:id="_XZBs0ArAEfCOUb3BTs5I8g" Value="0"/>
+            </StateReward>
+            <StateReward xmi:id="_XZBs0QrAEfCOUb3BTs5I8g" Set="2">
+              <Init xmi:id="_XZBs0grAEfCOUb3BTs5I8g" Value="0.5*u_WellAfterPrimaryOperation"/>
+              <Incr xmi:id="_XZBs0wrAEfCOUb3BTs5I8g" Value="(0*globalnset(2;_stage+1;1;_stage))+globalnset(2;_stage+1;2;0.5*u_WellAfterPrimaryOperation*DR)"/>
+              <Final xmi:id="_XZBs1ArAEfCOUb3BUr5I8g" Value="0"/>
+            </StateReward>
+          </MarkovData>
+          <Node xmi:id="_XZBs1QrAEfCOUb3BUr5I8g" NameID="Node9" Label="Survive" NodeType="ChanceNode">
+            <Prob xmi:id="_XZBs1grAEfCOUb3BUr5I8g" Value="#"/>
+            <MarkovData xsi:type="tree:MarkovTransitionData" xmi:id="_XZBs1wrAEfCOUb3BUr5I8g"/>
+            <Node xmi:id="_XZBs2ArAEfCOUb3BUr5I8g" NameID="Node11" Label="Well after primary operation" NodeType="TerminalNode">
+              <Prob xmi:id="_XZBs2QrAEfCOUb3BVq5I8g" Value="#"/>
+              <MarkovData xsi:type="tree:MarkovJumpTransitionData" xmi:id="_XZBs2grAEfCOUb3BVq5I8g" MarkovJumpState="Well after primary operation">
+                <TransitionReward xmi:id="_XZBs2wrAEfCOUb3BVq5I8g" Set="2" Value="(0.5*u_WellAfterPrimaryOperation*DR)"/>
+                <TransitionReward xmi:id="_XZBs3ArAEfCOUb3BVq5I8g" Set="1" Value="0"/>
+              </MarkovData>
+            </Node>
+            <Node xmi:id="_XZBs3QrAEfCOUb3BVq5I8g" NameID="Node10" Label="Fail after primary operation" NodeType="ChanceNode">
+              <Prob xmi:id="_XZBs3grAEfCOUb3BWp5I8g" Value="p_FailAfterPrimaryOperation"/>
+              <MarkovData xsi:type="tree:MarkovTransitionData" xmi:id="_XZBs3wrAEfCOUb3BWp5I8g"/>
+              <Node xmi:id="_XZBs4ArAEfCOUb3BWp5I8g" NameID="Node13" Label="Survive" NodeType="ChanceNode">
+                <Prob xmi:id="_XZBs4QrAEfCOUb3BWp5I8g" Value="#"/>
+                <MarkovData xsi:type="tree:MarkovTransitionData" xmi:id="_XZBs4grAEfCOUb3BWp5I8g"/>
+                <Node xmi:id="_XZBs4wrAEfCOUb3BXo5I8g" NameID="Node15" Label="Fail Without knee instability" NodeType="TerminalNode">
+                  <Prob xmi:id="_XZBs5ArAEfCOUb3BXo5I8g" Value="#"/>
+                  <MarkovData xsi:type="tree:MarkovJumpTransitionData" xmi:id="_XZBs5QrAEfCOUb3BXo5I8g" MarkovJumpState="Revision with primary TKA prosthesis">
+                    <TransitionReward xmi:id="_XZBs5grAEfCOUb3BXo5I8g" Set="1" Value="0"/>
+                    <TransitionReward xmi:id="_XZBs5wrAEfCOUb3BXo5I8g" Set="2" Value="0.5*u_FailSurgery_no_instability*DR"/>
+                  </MarkovData>
+                </Node>
+                <Node xmi:id="_XZBs6ArAEfCOUb3BYn5I8g" NameID="Node14" Label="Fail With knee instability" NodeType="TerminalNode">
+                  <Prob xmi:id="_XZBs6QrAEfCOUb3BYn5I8g" Value="p_FailWithInstability"/>
+                  <MarkovData xsi:type="tree:MarkovJumpTransitionData" xmi:id="_XZBs6grAEfCOUb3BYn5I8g" MarkovJumpState="Revision with revision TKA prosthesis">
+                    <TransitionReward xmi:id="_XZBs6wrAEfCOUb3BYn5I8g" Set="1" Value="0"/>
+                    <TransitionReward xmi:id="_XZBs7ArAEfCOUb3BYn5I8g" Set="2" Value="0.5*u_FailSurgery_with_instability*DR"/>
+                  </MarkovData>
+                </Node>
+              </Node>
+              <Node xmi:id="_XZBs7QrAEfCOUb3BZm5I8g" NameID="Node12" Label="Die" NodeType="TerminalNode">
+                <Prob xmi:id="_XZBs7grAEfCOUb3BZm5I8g" Value="p_Die"/>
+                <MarkovData xsi:type="tree:MarkovJumpTransitionData" xmi:id="_XZBs7wrAEfCOUb3BZm5I8g" MarkovJumpState="Dead"/>
+              </Node>
+            </Node>
+          </Node>
+          <Node xmi:id="_XZBs8ArAEfCOUb3BZm5I8g" NameID="Node8" Label="Die" NodeType="TerminalNode">
+            <Prob xmi:id="_XZBs8QrAEfCOUb3BZm5I8g" Value="p_Die"/>
+            <MarkovData xsi:type="tree:MarkovJumpTransitionData" xmi:id="_XZBs8grAEfCOUb3Bal5I8g" MarkovJumpState="Dead"/>
+          </Node>
+        </Node>
+        <Node xmi:id="_XZBs8wrAEfCOUb3Bal5I8g" NameID="Node5" Label="Revision with primary TKA prosthesis" NodeType="ChanceNode">
+          <Prob xmi:id="_XZBs9ArAEfCOUb3Bal5I8g" Value="0"/>
+          <MarkovData xsi:type="tree:MarkovNonAbsorbingStateData" xmi:id="_XZBs9QrAEfCOUb3Bal5I8g">
+            <StateReward xmi:id="_XZBs9grAEfCOUb3Bal5I8g" Set="1">
+              <Init xmi:id="_XZBs9wrAEfCOUb3Bbk5I8g" Value="(c_InitialCostRevisionByPrimaryTKA*DR)+c_physician_RevisionwithPrimaryTKA" Comment=""/>
+              <Incr xmi:id="_XZBs-ArAEfCOUb3Bbk5I8g" Value="0" Comment=""/>
+              <Final xmi:id="_XZBs-QrAEfCOUb3Bbk5I8g" Value="0" Comment=""/>
+            </StateReward>
+            <StateReward xmi:id="_XZBs-grAEfCOUb3Bbk5I8g" Set="2">
+              <Init xmi:id="_XZBs-wrAEfCOUb3Bbk5I8g" Value="0.5*u_WellAfterRevisionByPrimaryTKA*DR" Comment=""/>
+              <Incr xmi:id="_XZBs_ArAEfCOUb3Bcj5I8g" Value="(0.5*u_WellAfterRevisionByPrimaryTKA*DR)+(0*globalnset(1;_stage+1;2;u_WellAfterRevisionByPrimaryTKA))" Comment=""/>
+              <Final xmi:id="_XZBs_QrAEfCOUb3Bcj5I8g" Value="0.5*u_WellAfterRevisionByPrimaryTKA*DR" Comment=""/>
+            </StateReward>
+          </MarkovData>
+          <Node xmi:id="_XZBs_grAEfCOUb3Bcj5I8g" NameID="Node17" Label="Survive" NodeType="ChanceNode">
+            <Prob xmi:id="_XZBs_wrAEfCOUb3Bcj5I8g" Value="#"/>
+            <MarkovData xsi:type="tree:MarkovTransitionData" xmi:id="_XZBtAArAEfCOUb3Bcj5I8g"/>
+            <Node xmi:id="_XZBtAQrAEfCOUb3Bdi5I8g" NameID="Node19" Label="Stable after primary prosthesis" NodeType="TerminalNode">
+              <Prob xmi:id="_XZBtAgrAEfCOUb3Bdi5I8g" Value="#"/>
+              <MarkovData xsi:type="tree:MarkovJumpTransitionData" xmi:id="_XZBtAwrAEfCOUb3Bdi5I8g" MarkovJumpState="Revision with primary TKA prosthesis">
+                <TransitionReward xmi:id="_XZBtBArAEfCOUb3Bdi5I8g" Set="1" Value="0"/>
+                <TransitionReward xmi:id="_XZBtBQrAEfCOUb3Bdi5I8g" Set="2" Value="0.5*u_WellAfterRevisionByPrimaryTKA*DR"/>
+              </MarkovData>
+            </Node>
+            <Node xmi:id="_XZBtBgrAEfCOUb3Beh5I8g" NameID="Node18" Label="Instability after revision with primary prosthesis" NodeType="TerminalNode">
+              <Prob xmi:id="_XZBtBwrAEfCOUb3Beh5I8g" Value="p_InstabilityAfterRevision"/>
+              <MarkovData xsi:type="tree:MarkovJumpTransitionData" xmi:id="_XZBtCArAEfCOUb3Beh5I8g" MarkovJumpState="Revision with revision TKA prosthesis">
+                <TransitionReward xmi:id="_XZBtCQrAEfCOUb3Beh5I8g" Set="1" Value="0"/>
+                <TransitionReward xmi:id="_XZBtCgrAEfCOUb3Beh5I8g" Set="2" Value="0.5*u_FailSurgery_with_instability*DR"/>
+              </MarkovData>
+            </Node>
+          </Node>
+          <Node xmi:id="_XZBtCwrAEfCOUb3Bfg5I8g" NameID="Node16" Label="Die" NodeType="TerminalNode">
+            <Prob xmi:id="_XZBtDArAEfCOUb3Bfg5I8g" Value="p_Die"/>
+            <MarkovData xsi:type="tree:MarkovJumpTransitionData" xmi:id="_XZBtDQrAEfCOUb3Bfg5I8g" MarkovJumpState="Dead"/>
+          </Node>
+        </Node>
+        <Node xmi:id="_XZBtDgrAEfCOUb3Bfg5I8g" NameID="Node7" Label="Revision with revision TKA prosthesis" NodeType="ChanceNode">
+          <Prob xmi:id="_XZBtDwrAEfCOUb3Bfg5I8g" Value="0"/>
+          <MarkovData xsi:type="tree:MarkovNonAbsorbingStateData" xmi:id="_XZBtEArAEfCOUb3Bgf5I8g">
+            <StateReward xmi:id="_XZBtEQrAEfCOUb3Bgf5I8g" Set="1">
+              <Init xmi:id="_XZBtEgrAEfCOUb3Bgf5I8g" Value="(c_InitialCostRevisionByHighStabilityImplant*DR)+c_PhysicianCostForRevision" Comment=""/>
+              <Incr xmi:id="_XZBtEwrAEfCOUb3Bgf5I8g" Value="0" Comment=""/>
+              <Final xmi:id="_XZBtFArAEfCOUb3Bgf5I8g" Value="0" Comment=""/>
+            </StateReward>
+            <StateReward xmi:id="_XZBtFQrAEfCOUb3Bhe5I8g" Set="2">
+              <Init xmi:id="_XZBtFgrAEfCOUb3Bhe5I8g" Value="0.5*u_WellAfterHighStabilityImplant*DR" Comment=""/>
+              <Incr xmi:id="_XZBtFwrAEfCOUb3Bhe5I8g" Value="(0.5*u_WellAfterHighStabilityImplant*DR)+(0*globalnset(1;_stage+1;3;u_WellAfterHighStabilityImplant))" Comment=""/>
+              <Final xmi:id="_XZBtGArAEfCOUb3Bhe5I8g" Value="0.5*u_WellAfterHighStabilityImplant*DR" Comment=""/>
+            </StateReward>
+          </MarkovData>
+          <Node xmi:id="_XZBtGQrAEfCOUb3Bhe5I8g" NameID="Node21" Label="Survive" NodeType="TerminalNode">
+            <Prob xmi:id="_XZBtGgrAEfCOUb3Bid5I8g" Value="#"/>
+            <MarkovData xsi:type="tree:MarkovJumpTransitionData" xmi:id="_XZBtGwrAEfCOUb3Bid5I8g" MarkovJumpState="Revision with revision TKA prosthesis">
+              <TransitionReward xmi:id="_XZBtHArAEfCOUb3Bid5I8g" Set="1" Value="0"/>
+              <TransitionReward xmi:id="_XZBtHQrAEfCOUb3Bid5I8g" Set="2" Value="0.5*u_WellAfterHighStabilityImplant*DR"/>
+            </MarkovData>
+          </Node>
+          <Node xmi:id="_XZBtHgrAEfCOUb3Bid5I8g" NameID="Node20" Label="Die" NodeType="TerminalNode">
+            <Prob xmi:id="_XZBtHwrAEfCOUb3Bjc5I8g" Value="p_Die"/>
+            <MarkovData xsi:type="tree:MarkovJumpTransitionData" xmi:id="_XZBtIArAEfCOUb3Bjc5I8g" MarkovJumpState="Dead"/>
+          </Node>
+        </Node>
+        <Node xmi:id="_XZBtIQrAEfCOUb3Bjc5I8g" NameID="Node22" Label="Dead" NodeType="TerminalNode">
+          <Prob xmi:id="_XZBtIgrAEfCOUb3Bjc5I8g" Value="0"/>
+          <MarkovData xsi:type="tree:MarkovStateData" xmi:id="_XZBtIwrAEfCOUb3Bjc5I8g">
+            <StateReward xmi:id="_XZBtJArAEfCOUb3Bkb5I8g" Set="1">
+              <Init xmi:id="_XZBtJQrAEfCOUb3Bkb5I8g" Value="0"/>
+              <Incr xmi:id="_XZBtJgrAEfCOUb3Bkb5I8g" Value="0"/>
+              <Final xmi:id="_XZBtJwrAEfCOUb3Bkb5I8g" Value="0"/>
+            </StateReward>
+            <StateReward xmi:id="_XZBtKArAEfCOUb3Bkb5I8g" Set="2">
+              <Init xmi:id="_XZBtKQrAEfCOUb3Bla5I8g" Value="0"/>
+              <Incr xmi:id="_XZBtKgrAEfCOUb3Bla5I8g" Value="0"/>
+              <Final xmi:id="_XZBtKwrAEfCOUb3Bla5I8g" Value="0"/>
+            </StateReward>
+          </MarkovData>
+        </Node>
+        <Termination xmi:id="_XZBtLArAEfCOUb3Bla5I8g" Set="1" Value="_stage = 540" Comment="Default condition must be modified to correct rule for model."/>
+        <Termination xmi:id="_XZBtLQrAEfCOUb3Bla5I8g" Value="_stage = 540" Comment="Default condition must be modified to correct rule for model."/>
+      </Node>
+      <Node xmi:id="_XZBtLgrAEfCOUb3BmZ5I8g" NameID="Node2" Label="UKA" NodeType="MarkovNode" AttachToCloneMaster="1">
+        <Definition xmi:id="_XZBtLwrAEfCOUb3BmZ5I8g" Variable="p_FailWithInstability" Value="p_FailWithInstatibilityUKA"/>
+        <Definition xmi:id="_XZBtMArAEfCOUb3BmZ5I8g" Variable="p_FailAfterPrimaryOperation" Value="p_FailAfterPrimaryUKA"/>
+        <Definition xmi:id="_XZBtMQrAEfCOUb3BmZ5I8g" Variable="p_InstabilityAfterRevision" Value="p_InstabilityAfterRevisionUKA"/>
+        <Definition xmi:id="_XZBtMgrAEfCOUb3BmZ5I8g" Variable="c_InitialCostPrimaryOperation" Value="c_InitialCostUKA+c_PhysicianCostForUKA"/>
+        <Definition xmi:id="_XZBtMwrAEfCOUb3BnY5I8g" Variable="c_physician_RevisionwithPrimaryTKA" Value="c_PhysicianCostForRevision"/>
+        <Definition xmi:id="_XZBtNArAEfCOUb3BnY5I8g" Variable="p_Die" Value="p_DieGenPop_startAge45"/>
+        <Definition xmi:id="_XZBtNQrAEfCOUb3BnY5I8g" Variable="u_FailSurgery_no_instability" Value="u_FailSurgery_no_instability_UKA" Comment="Konopka, Conversion of unicompartmental knee arthroplasty to total knee arthroplasty"/>
+        <Definition xmi:id="_XZBtNgrAEfCOUb3BnY5I8g" Variable="u_FailSurgery_with_instability" Value="u_FailSurgery_with_instability_TKA"/>
+        <Definition xmi:id="_XZBtNwrAEfCOUb3BnY5I8g" Variable="u_WellAfterHighStabilityImplant" Value="u_WellAfterHighStabilityImplant"/>
+        <Definition xmi:id="_XZBtOArAEfCOUb3BoX5I8g" Variable="u_WellAfterPrimaryOperation" Value="u_WellAfterPrimaryOperation_UKA" Comment="Konopka"/>
+        <Definition xmi:id="_XZBtOQrAEfCOUb3BoX5I8g" Variable="u_WellAfterRevisionByPrimaryTKA" Value="u_WellAfterRevisionByPrimaryTKA"/>
+        <Termination xmi:id="_XZBtOgrAEfCOUb3BoX5I8g" Set="1" Value="_stage = 540" Comment="Default condition must be modified to correct rule for model."/>
+        <Termination xmi:id="_XZBtOwrAEfCOUb3BoX5I8g" Value="_stage = 540" Comment="Default condition must be modified to correct rule for model."/>
+      </Node>
+      <Node xmi:id="_XZBtPArAEfCOUb3BoX5I8g" NameID="Node4" Label="HTO" NodeType="MarkovNode" AttachToCloneMaster="1">
+        <Definition xmi:id="_XZBtPQrAEfCOUb3BpW5I8g" Variable="p_FailAfterPrimaryOperation" Value="p_FailAfterPrimaryHTO"/>
+        <Definition xmi:id="_XZBtPgrAEfCOUb3BpW5I8g" Variable="p_FailWithInstabilityHTO" Value="p_FailWithInstabilityHTO"/>
+        <Definition xmi:id="_XZBtPwrAEfCOUb3BpW5I8g" Variable="p_InstabilityAfterRevision" Value="p_InstabilityAfterRevisionTKA"/>
+        <Definition xmi:id="_XZBtQArAEfCOUb3BpW5I8g" Variable="c_InitialCostPrimaryOperation" Value="c_InitialCostHTO+c_PhysicianCostForMOWHTO"/>
+        <Definition xmi:id="_XZBtQQrAEfCOUb3BpW5I8g" Variable="c_physician_RevisionwithPrimaryTKA" Value="c_PhysicianCostForTKA"/>
+        <Definition xmi:id="_XZBtQgrAEfCOUb3BqV5I8g" Variable="p_Die" Value="p_DieGenPop_startAge45"/>
+        <Definition xmi:id="_XZBtQwrAEfCOUb3BqV5I8g" Variable="u_FailSurgery_no_instability" Value="u_FailSurgery_no_instability_HTO"/>
+        <Definition xmi:id="_XZBtRArAEfCOUb3BqV5I8g" Variable="u_FailSurgery_with_instability" Value="u_FailSurgery_with_instability_TKA" Comment="assume worse as PJI"/>
+        <Definition xmi:id="_XZBtRQrAEfCOUb3BqV5I8g" Variable="u_WellAfterHighStabilityImplant" Value="u_WellAfterHighStabilityImplant_HTO"/>
+        <Definition xmi:id="_XZBtRgrAEfCOUb3BqV5I8g" Variable="u_WellAfterPrimaryOperation" Value="u_WellAfterPrimaryOperation_HTO"/>
+        <Definition xmi:id="_XZBtRwrAEfCOUb3BrU5I8g" Variable="u_WellAfterRevisionByPrimaryTKA" Value="u_WellAfterRevisionByPrimaryTKAforHTO"/>
+        <Termination xmi:id="_XZBtSArAEfCOUb3BrU5I8g" Set="1" Value="_stage = 540" Comment="Default condition must be modified to correct rule for model."/>
+        <Termination xmi:id="_XZBtSQrAEfCOUb3BrU5I8g" Value="_stage = 540" Comment="Default condition must be modified to correct rule for model."/>
+      </Node>
+    </Node>
+    <Distribution xmi:id="_XZBtSgrAEfCOUb3BrU5I8g" NameID="d_c_TKA" Label="Sunnybrook Case Costing" Comment="PROC_CODE = 1VG53LAPPQ&#x9;Primary cemented TKA, with graft, with patella resurfacing" Index="1" Type="Gamma">
+      <Parameter xmi:id="_XZBtSwrAEfCOUb3BrU5I8g" Name="subtype" Value="1"/>
+      <Parameter xmi:id="_XZBtTArAEfCOUb3BsT5I8g" Name="alpha" Value="((8009.98)^2)/((1738.41)^2)"/>
+      <Parameter xmi:id="_XZBtTQrAEfCOUb3BsT5I8g" Name="lambda" Value="(8009.98)/((1738.41)^2)"/>
+      <AlternativeParams xmi:id="_XZBtTgrAEfCOUb3BsT5I8g" Name="meanStdDev">
+        <Params xmi:id="_XZBtTwrAEfCOUb3BsT5I8g" Name="mean" Value="8009.98"/>
+        <Params xmi:id="_XZBtUArAEfCOUb3BsT5I8g" Name="stddev" Value="1738.41"/>
+      </AlternativeParams>
+    </Distribution>
+    <Distribution xmi:id="_XZBtUQrAEfCOUb3BtS5I8g" NameID="d_c_UKA" Label="Sunnybrook Case Costing" Comment="Sunnybrook Case costing" Index="2" Type="Gamma">
+      <Parameter xmi:id="_XZCTgArAEfCOUb3BtS5I8g" Name="subtype" Value="1"/>
+      <Parameter xmi:id="_XZCTgQrAEfCOUb3BtS5I8g" Name="alpha" Value="((8272.69)^2)/((738)^2)"/>
+      <Parameter xmi:id="_XZCTggrAEfCOUb3BtS5I8g" Name="lambda" Value="(8272.69)/((738)^2)"/>
+      <AlternativeParams xmi:id="_XZCTgwrAEfCOUb3BtS5I8g" Name="meanStdDev">
+        <Params xmi:id="_XZCThArAEfCOUb3BuR5I8g" Name="mean" Value="8272.69"/>
+        <Params xmi:id="_XZCThQrAEfCOUb3BuR5I8g" Name="stddev" Value="738"/>
+      </AlternativeParams>
+    </Distribution>
+    <Distribution xmi:id="_XZCThgrAEfCOUb3BuR5I8g" NameID="d_c_HTO" Label="Sunnybrook Case Costing" Comment="" Index="3" Type="Gamma">
+      <Parameter xmi:id="_XZCThwrAEfCOUb3BuR5I8g" Name="subtype" Value="1"/>
+      <Parameter xmi:id="_XZCTiArAEfCOUb3BuR5I8g" Name="alpha" Value="((8091.68)^2)/((2929)^2)"/>
+      <Parameter xmi:id="_XZCTiQrAEfCOUb3BvQ5I8g" Name="lambda" Value="(8091.68)/((2929)^2)"/>
+      <AlternativeParams xmi:id="_XZCTigrAEfCOUb3BvQ5I8g" Name="meanStdDev">
+        <Params xmi:id="_XZCTiwrAEfCOUb3BvQ5I8g" Name="mean" Value="8091.68"/>
+        <Params xmi:id="_XZCTjArAEfCOUb3BvQ5I8g" Name="stddev" Value="2929"/>
+      </AlternativeParams>
+    </Distribution>
+    <Distribution xmi:id="_XZCTjQrAEfCOUb3BvQ5I8g" NameID="d_c_CJRRcostPrimaryTKA" Label="CJRR" Comment="same as CJRR" Index="4" Type="Gamma">
+      <Parameter xmi:id="_XZCTjgrAEfCOUb3BwP5I8g" Name="subtype" Value="1"/>
+      <Parameter xmi:id="_XZCTjwrAEfCOUb3BwP5I8g" Name="alpha" Value="((8178)^2)/((0.2*8178)^2)"/>
+      <Parameter xmi:id="_XZCTkArAEfCOUb3BwP5I8g" Name="lambda" Value="(8178)/((0.2*8178)^2)"/>
+      <AlternativeParams xmi:id="_XZCTkQrAEfCOUb3BwP5I8g" Name="meanStdDev">
+        <Params xmi:id="_XZCTkgrAEfCOUb3BwP5I8g" Name="mean" Value="8178"/>
+        <Params xmi:id="_XZCTkwrAEfCOUb3BxO5I8g" Name="stddev" Value="0.2*8178"/>
+      </AlternativeParams>
+    </Distribution>
+    <Distribution xmi:id="_XZCTlArAEfCOUb3BxO5I8g" NameID="d_c_CJRRcostRevisionTKA" Label="CJRR revision TKA, not include physician cost" Comment="" Index="5" Type="Gamma">
+      <Parameter xmi:id="_XZCTlQrAEfCOUb3BxO5I8g" Name="subtype" Value="1"/>
+      <Parameter xmi:id="_XZCTlgrAEfCOUb3BxO5I8g" Name="alpha" Value="((14739)^2)/((0.2*14739)^2)"/>
+      <Parameter xmi:id="_XZCTlwrAEfCOUb3BxO5I8g" Name="lambda" Value="(14739)/((0.2*14739)^2)"/>
+      <AlternativeParams xmi:id="_XZCTmArAEfCOUb3ByN5I8g" Name="meanStdDev">
+        <Params xmi:id="_XZCTmQrAEfCOUb3ByN5I8g" Name="mean" Value="14739"/>
+        <Params xmi:id="_XZCTmgrAEfCOUb3ByN5I8g" Name="stddev" Value="0.2*14739"/>
+      </AlternativeParams>
+    </Distribution>
+    <Distribution xmi:id="_XZCTmwrAEfCOUb3ByN5I8g" NameID="d_c_physicianTKAorUKAorHTOtoTKA" Label="Same rate" Comment="" Index="6" Type="Gamma">
+      <Parameter xmi:id="_XZCTnArAEfCOUb3ByN5I8g" Name="subtype" Value="1"/>
+      <Parameter xmi:id="_XZCTnQrAEfCOUb3BzM5I8g" Name="alpha" Value="((c_meanPhysicianCostForTKA)^2)/((0.2*c_meanPhysicianCostForTKA)^2)"/>
+      <Parameter xmi:id="_XZCTngrAEfCOUb3BzM5I8g" Name="lambda" Value="(c_meanPhysicianCostForTKA)/((0.2*c_meanPhysicianCostForTKA)^2)"/>
+      <AlternativeParams xmi:id="_XZCTnwrAEfCOUb3BzM5I8g" Name="meanStdDev">
+        <Params xmi:id="_XZCToArAEfCOUb3BzM5I8g" Name="mean" Value="c_meanPhysicianCostForTKA"/>
+        <Params xmi:id="_XZCToQrAEfCOUb3BzM5I8g" Name="stddev" Value="0.2*c_meanPhysicianCostForTKA"/>
+      </AlternativeParams>
+    </Distribution>
+    <Distribution xmi:id="_XZCTogrAEfCOUb3B0L5I8g" NameID="d_c_physicianRevision" Label="UKA to revisionTKA, TKA to revision TKA" Comment="" Index="7" Type="Gamma">
+      <Parameter xmi:id="_XZCTowrAEfCOUb3B0L5I8g" Name="subtype" Value="1"/>
+      <Parameter xmi:id="_XZCTpArAEfCOUb3B0L5I8g" Name="alpha" Value="((c_meanPhysicianCostForRevision)^2)/((0.2*c_meanPhysicianCostForRevision)^2)"/>
+      <Parameter xmi:id="_XZCTpQrAEfCOUb3B0L5I8g" Name="lambda" Value="(c_meanPhysicianCostForRevision)/((0.2*c_meanPhysicianCostForRevision)^2)"/>
+      <AlternativeParams xmi:id="_XZCTpgrAEfCOUb3B0L5I8g" Name="meanStdDev">
+        <Params xmi:id="_XZCTpwrAEfCOUb3B1K5I8g" Name="mean" Value="c_meanPhysicianCostForRevision"/>
+        <Params xmi:id="_XZCTqArAEfCOUb3B1K5I8g" Name="stddev" Value="0.2*c_meanPhysicianCostForRevision"/>
+      </AlternativeParams>
+    </Distribution>
+    <Distribution xmi:id="_XZCTqQrAEfCOUb3B1K5I8g" NameID="d_u_FailSurgery_no_instability_TKA" Label="" Comment="" Index="8" Type="Beta">
+      <Parameter xmi:id="_XZCTqgrAEfCOUb3B1K5I8g" Name="subtype" Value="2"/>
+      <Parameter xmi:id="_XZCTqwrAEfCOUb3B1K5I8g" Name="alpha" Value="(((u_FailSurgery_no_instability_meanTKA)^2)*(1-(u_FailSurgery_no_instability_meanTKA))/((u_FailSurgery_no_instability_SDTKA)^2)-(u_FailSurgery_no_instability_meanTKA))"/>
+      <Parameter xmi:id="_XZCTrArAEfCOUb3B2J5I8g" Name="beta" Value="((1-(u_FailSurgery_no_instability_meanTKA))*(((1-(u_FailSurgery_no_instability_meanTKA))*(u_FailSurgery_no_instability_meanTKA))/((u_FailSurgery_no_instability_SDTKA)^2)-1))"/>
+      <AlternativeParams xmi:id="_XZCTrQrAEfCOUb3B2J5I8g" Name="meanStdDev">
+        <Params xmi:id="_XZCTrgrAEfCOUb3B2J5I8g" Name="mean" Value="u_FailSurgery_no_instability_meanTKA"/>
+        <Params xmi:id="_XZCTrwrAEfCOUb3B2J5I8g" Name="stddev" Value="u_FailSurgery_no_instability_SDTKA"/>
+      </AlternativeParams>
+    </Distribution>
+    <Distribution xmi:id="_XZCTsArAEfCOUb3B2J5I8g" NameID="d_u_FailSurgery_with_instability_TKA" Label="" Comment="" Index="9" Type="Beta">
+      <Parameter xmi:id="_XZCTsQrAEfCOUb3B3I5I8g" Name="subtype" Value="2"/>
+      <Parameter xmi:id="_XZCTsgrAEfCOUb3B3I5I8g" Name="alpha" Value="(((u_FailSurgery_with_instability_meanTKA)^2)*(1-(u_FailSurgery_with_instability_meanTKA))/((u_FailSurgery_with_instability_SDTKA)^2)-(u_FailSurgery_with_instability_meanTKA))"/>
+      <Parameter xmi:id="_XZCTswrAEfCOUb3B3I5I8g" Name="beta" Value="((1-(u_FailSurgery_with_instability_meanTKA))*(((1-(u_FailSurgery_with_instability_meanTKA))*(u_FailSurgery_with_instability_meanTKA))/((u_FailSurgery_with_instability_SDTKA)^2)-1))"/>
+      <AlternativeParams xmi:id="_XZCTtArAEfCOUb3B3I5I8g" Name="meanStdDev">
+        <Params xmi:id="_XZCTtQrAEfCOUb3B3I5I8g" Name="mean" Value="u_FailSurgery_with_instability_meanTKA"/>
+        <Params xmi:id="_XZCTtgrAEfCOUb3B4H5I8g" Name="stddev" Value="u_FailSurgery_with_instability_SDTKA"/>
+      </AlternativeParams>
+    </Distribution>
+    <Distribution xmi:id="_XZCTtwrAEfCOUb3B4H5I8g" NameID="d_u_WellAfterHighStabilityImplant" Label="" Comment="" Index="10" Type="Beta">
+      <Parameter xmi:id="_XZCTuArAEfCOUb3B4H5I8g" Name="subtype" Value="2"/>
+      <Parameter xmi:id="_XZCTuQrAEfCOUb3B4H5I8g" Name="alpha" Value="(((u_WellAfterHighStabilityImplant_mean)^2)*(1-(u_WellAfterHighStabilityImplant_mean))/((u_WellAfterHighStabilityImplant_SD)^2)-(u_WellAfterHighStabilityImplant_mean))"/>
+      <Parameter xmi:id="_XZCTugrAEfCOUb3B4H5I8g" Name="beta" Value="((1-(u_WellAfterHighStabilityImplant_mean))*(((1-(u_WellAfterHighStabilityImplant_mean))*(u_WellAfterHighStabilityImplant_mean))/((u_WellAfterHighStabilityImplant_SD)^2)-1))"/>
+      <AlternativeParams xmi:id="_XZCTuwrAEfCOUb3B5G5I8g" Name="meanStdDev">
+        <Params xmi:id="_XZCTvArAEfCOUb3B5G5I8g" Name="mean" Value="u_WellAfterHighStabilityImplant_mean"/>
+        <Params xmi:id="_XZCTvQrAEfCOUb3B5G5I8g" Name="stddev" Value="u_WellAfterHighStabilityImplant_SD"/>
+      </AlternativeParams>
+    </Distribution>
+    <Distribution xmi:id="_XZCTvgrAEfCOUb3B5G5I8g" NameID="d_u_WellAfterPrimaryOperation_TKA" Label="" Comment="" Index="11" Type="Beta">
+      <Parameter xmi:id="_XZCTvwrAEfCOUb3B5G5I8g" Name="subtype" Value="2"/>
+      <Parameter xmi:id="_XZCTwArAEfCOUb3B6F5I8g" Name="alpha" Value="(((u_WellAfterPrimaryOperation_TKA_mean)^2)*(1-(u_WellAfterPrimaryOperation_TKA_mean))/((u_WellAfterPrimaryOperation_TKA_SD)^2)-(u_WellAfterPrimaryOperation_TKA_mean))"/>
+      <Parameter xmi:id="_XZCTwQrAEfCOUb3B6F5I8g" Name="beta" Value="((1-(u_WellAfterPrimaryOperation_TKA_mean))*(((1-(u_WellAfterPrimaryOperation_TKA_mean))*(u_WellAfterPrimaryOperation_TKA_mean))/((u_WellAfterPrimaryOperation_TKA_SD)^2)-1))"/>
+      <AlternativeParams xmi:id="_XZCTwgrAEfCOUb3B6F5I8g" Name="meanStdDev">
+        <Params xmi:id="_XZCTwwrAEfCOUb3B6F5I8g" Name="mean" Value="u_WellAfterPrimaryOperation_TKA_mean"/>
+        <Params xmi:id="_XZCTxArAEfCOUb3B6F5I8g" Name="stddev" Value="u_WellAfterPrimaryOperation_TKA_SD"/>
+      </AlternativeParams>
+    </Distribution>
+    <Distribution xmi:id="_XZCTxQrAEfCOUb3B7E5I8g" NameID="d_u_WellAfterRevisionByPrimaryTKA" Label="" Comment="" Index="12" Type="Beta">
+      <Parameter xmi:id="_XZCTxgrAEfCOUb3B7E5I8g" Name="subtype" Value="2"/>
+      <Parameter xmi:id="_XZCTxwrAEfCOUb3B7E5I8g" Name="alpha" Value="(((u_WellAfterPrimaryOperation_TKA_mean)^2)*(1-(u_WellAfterPrimaryOperation_TKA_mean))/((u_WellAfterPrimaryOperation_TKA_SD)^2)-(u_WellAfterPrimaryOperation_TKA_mean))"/>
+      <Parameter xmi:id="_XZCTyArAEfCOUb3B7E5I8g" Name="beta" Value="((1-(u_WellAfterPrimaryOperation_TKA_mean))*(((1-(u_WellAfterPrimaryOperation_TKA_mean))*(u_WellAfterPrimaryOperation_TKA_mean))/((u_WellAfterPrimaryOperation_TKA_SD)^2)-1))"/>
+      <AlternativeParams xmi:id="_XZCTyQrAEfCOUb3B7E5I8g" Name="meanStdDev">
+        <Params xmi:id="_XZCTygrAEfCOUb3B8D5I8g" Name="mean" Value="u_WellAfterPrimaryOperation_TKA_mean"/>
+        <Params xmi:id="_XZCTywrAEfCOUb3B8D5I8g" Name="stddev" Value="u_WellAfterPrimaryOperation_TKA_SD"/>
+      </AlternativeParams>
+    </Distribution>
+    <Distribution xmi:id="_XZCTzArAEfCOUb3B8D5I8g" NameID="d_u_FailSurgery_no_instability_UKA" Label="" Comment="" Index="13" Type="Beta">
+      <Parameter xmi:id="_XZCTzQrAEfCOUb3B8D5I8g" Name="subtype" Value="2"/>
+      <Parameter xmi:id="_XZCTzgrAEfCOUb3B8D5I8g" Name="alpha" Value="(((u_FailSurgery_no_instability_meanUKA)^2)*(1-(u_FailSurgery_no_instability_meanUKA))/((u_FailSurgery_no_instability_SDUKA)^2)-(u_FailSurgery_no_instability_meanUKA))"/>
+      <Parameter xmi:id="_XZCTzwrAEfCOUb3B9C5I8g" Name="beta" Value="((1-(u_FailSurgery_no_instability_meanUKA))*(((1-(u_FailSurgery_no_instability_meanUKA))*(u_FailSurgery_no_instability_meanUKA))/((u_FailSurgery_no_instability_SDUKA)^2)-1))"/>
+      <AlternativeParams xmi:id="_XZCT0ArAEfCOUb3B9C5I8g" Name="meanStdDev">
+        <Params xmi:id="_XZCT0QrAEfCOUb3B9C5I8g" Name="mean" Value="u_FailSurgery_no_instability_meanUKA"/>
+        <Params xmi:id="_XZCT0grAEfCOUb3B9C5I8g" Name="stddev" Value="u_FailSurgery_no_instability_SDUKA"/>
+      </AlternativeParams>
+    </Distribution>
+    <Distribution xmi:id="_XZCT0wrAEfCOUb3B9C5I8g" NameID="d_u_WellAfterPrimaryOperation_UKA" Label="" Comment="" Index="14" Type="Beta">
+      <Parameter xmi:id="_XZCT1ArAEfCOUb3B-B5I8g" Name="subtype" Value="2"/>
+      <Parameter xmi:id="_XZCT1QrAEfCOUb3B-B5I8g" Name="alpha" Value="(((u_WellAfterPrimaryOperation_UKA_mean)^2)*(1-(u_WellAfterPrimaryOperation_UKA_mean))/((u_WellAfterPrimaryOperation_UKA_SD)^2)-(u_WellAfterPrimaryOperation_UKA_mean))"/>
+      <Parameter xmi:id="_XZCT1grAEfCOUb3B-B5I8g" Name="beta" Value="((1-(u_WellAfterPrimaryOperation_UKA_mean))*(((1-(u_WellAfterPrimaryOperation_UKA_mean))*(u_WellAfterPrimaryOperation_UKA_mean))/((u_WellAfterPrimaryOperation_UKA_SD)^2)-1))"/>
+      <AlternativeParams xmi:id="_XZCT1wrAEfCOUb3B-B5I8g" Name="meanStdDev">
+        <Params xmi:id="_XZCT2ArAEfCOUb3B-B5I8g" Name="mean" Value="u_WellAfterPrimaryOperation_UKA_mean"/>
+        <Params xmi:id="_XZCT2QrAEfCOUb3B_A5I8g" Name="stddev" Value="u_WellAfterPrimaryOperation_UKA_SD"/>
+      </AlternativeParams>
+    </Distribution>
+    <Distribution xmi:id="_XZCT2grAEfCOUb3B_A5I8g" NameID="d_u_FailSurgery_no_instability_HTO" Label="" Comment="" Index="15" Type="Beta">
+      <Parameter xmi:id="_XZCT2wrAEfCOUb3B_A5I8g" Name="subtype" Value="2"/>
+      <Parameter xmi:id="_XZCT3ArAEfCOUb3B_A5I8g" Name="alpha" Value="(((u_FailSurgery_no_instability_meanHTO)^2)*(1-(u_FailSurgery_no_instability_meanHTO))/((u_FailSurgery_no_instability_sdHTO)^2)-(u_FailSurgery_no_instability_meanHTO))"/>
+      <Parameter xmi:id="_XZCT3QrAEfCOUb3B_A5I8g" Name="beta" Value="((1-(u_FailSurgery_no_instability_meanHTO))*(((1-(u_FailSurgery_no_instability_meanHTO))*(u_FailSurgery_no_instability_meanHTO))/((u_FailSurgery_no_instability_sdHTO)^2)-1))"/>
+      <AlternativeParams xmi:id="_XZCT3grAEfCOUb3BA_5I8g" Name="meanStdDev">
+        <Params xmi:id="_XZCT3wrAEfCOUb3BA_5I8g" Name="mean" Value="u_FailSurgery_no_instability_meanHTO"/>
+        <Params xmi:id="_XZCT4ArAEfCOUb3BA_5I8g" Name="stddev" Value="u_FailSurgery_no_instability_sdHTO"/>
+      </AlternativeParams>
+    </Distribution>
+    <Distribution xmi:id="_XZCT4QrAEfCOUb3BA_5I8g" NameID="d_u_WellAfterHighStabilityImplant_HTO" Label="" Comment="" Index="16" Type="Beta">
+      <Parameter xmi:id="_XZCT4grAEfCOUb3BA_5I8g" Name="subtype" Value="2"/>
+      <Parameter xmi:id="_XZCT4wrAEfCOUb3BB-5I8g" Name="alpha" Value="(((u_WellAfterHighStabilityImplant_mean)^2)*(1-(u_WellAfterHighStabilityImplant_mean))/((u_WellAfterHighStabilityImplant_SD)^2)-(u_WellAfterHighStabilityImplant_mean))"/>
+      <Parameter xmi:id="_XZCT5ArAEfCOUb3BB-5I8g" Name="beta" Value="((1-(u_WellAfterHighStabilityImplant_mean))*(((1-(u_WellAfterHighStabilityImplant_mean))*(u_WellAfterHighStabilityImplant_mean))/((u_WellAfterHighStabilityImplant_SD)^2)-1))"/>
+      <AlternativeParams xmi:id="_XZCT5QrAEfCOUb3BB-5I8g" Name="meanStdDev">
+        <Params xmi:id="_XZCT5grAEfCOUb3BB-5I8g" Name="mean" Value="u_WellAfterHighStabilityImplant_mean"/>
+        <Params xmi:id="_XZCT5wrAEfCOUb3BB-5I8g" Name="stddev" Value="u_WellAfterHighStabilityImplant_SD"/>
+      </AlternativeParams>
+    </Distribution>
+    <Distribution xmi:id="_XZCT6ArAEfCOUb3BC95I8g" NameID="d_u_WellAfterPrimaryOperation_HTO" Label="" Comment="" Index="17" Type="Beta">
+      <Parameter xmi:id="_XZCT6QrAEfCOUb3BC95I8g" Name="subtype" Value="2"/>
+      <Parameter xmi:id="_XZCT6grAEfCOUb3BC95I8g" Name="alpha" Value="(((u_WellAfterPrimaryOperation_HTO_mean)^2)*(1-(u_WellAfterPrimaryOperation_HTO_mean))/((u_WellAfterPrimaryOperation_HTO_sd)^2)-(u_WellAfterPrimaryOperation_HTO_mean))"/>
+      <Parameter xmi:id="_XZCT6wrAEfCOUb3BC95I8g" Name="beta" Value="((1-(u_WellAfterPrimaryOperation_HTO_mean))*(((1-(u_WellAfterPrimaryOperation_HTO_mean))*(u_WellAfterPrimaryOperation_HTO_mean))/((u_WellAfterPrimaryOperation_HTO_sd)^2)-1))"/>
+      <AlternativeParams xmi:id="_XZCT7ArAEfCOUb3BC95I8g" Name="meanStdDev">
+        <Params xmi:id="_XZCT7QrAEfCOUb3BD85I8g" Name="mean" Value="u_WellAfterPrimaryOperation_HTO_mean"/>
+        <Params xmi:id="_XZCT7grAEfCOUb3BD85I8g" Name="stddev" Value="u_WellAfterPrimaryOperation_HTO_sd"/>
+      </AlternativeParams>
+    </Distribution>
+    <Distribution xmi:id="_XZCT7wrAEfCOUb3BD85I8g" NameID="d_u_WellAfterRevisionByPrimaryTKAforHTO" Label="" Comment="" Index="18" Type="Beta">
+      <Parameter xmi:id="_XZCT8ArAEfCOUb3BD85I8g" Name="subtype" Value="2"/>
+      <Parameter xmi:id="_XZCT8QrAEfCOUb3BD85I8g" Name="alpha" Value="(((u_WellAfterRevisionByPrimaryTKAforHTO_mean)^2)*(1-(u_WellAfterRevisionByPrimaryTKAforHTO_mean))/((u_WellAfterRevisionByPrimaryTKAforHTO_sd)^2)-(u_WellAfterRevisionByPrimaryTKAforHTO_mean))"/>
+      <Parameter xmi:id="_XZCT8grAEfCOUb3BE75I8g" Name="beta" Value="((1-(u_WellAfterRevisionByPrimaryTKAforHTO_mean))*(((1-(u_WellAfterRevisionByPrimaryTKAforHTO_mean))*(u_WellAfterRevisionByPrimaryTKAforHTO_mean))/((u_WellAfterRevisionByPrimaryTKAforHTO_sd)^2)-1))"/>
+      <AlternativeParams xmi:id="_XZCT8wrAEfCOUb3BE75I8g" Name="meanStdDev">
+        <Params xmi:id="_XZCT9ArAEfCOUb3BE75I8g" Name="mean" Value="u_WellAfterRevisionByPrimaryTKAforHTO_mean"/>
+        <Params xmi:id="_XZCT9QrAEfCOUb3BE75I8g" Name="stddev" Value="u_WellAfterRevisionByPrimaryTKAforHTO_sd"/>
+      </AlternativeParams>
+    </Distribution>
+    <Variable xmi:id="_XZCT9grAEfCOUb3BE75I8g" NameID="p_DieAfterPrimaryOperation" Label="Memtsoudis SG, Della Valle AG, Besculides MC, Esposito M, Koulouvaris P, Salvati EA. Risk factors for perioperative mortality after lower extremity arthroplasty: a population-based study of 6,901,324 patient discharges. J Arthroplasty. 2010 Jan;25(1):19-26. doi: 10.1016/j.arth.2008.11.010. Epub 2008 Dec 23. PMID: 19106028." Comment="">
+      <Attributes xmi:id="_XZCT9wrAEfCOUb3BF65I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCT-ArAEfCOUb3BF65I8g" HighValue="0.0030000000000000027"/>
+    </Variable>
+    <Variable xmi:id="_XZCT-QrAEfCOUb3BF65I8g" NameID="ForSA_p_DieAfterPrimaryOperation" Label="Inhospital mortality TKA = 0.30%" Comment="">
+      <Attributes xmi:id="_XZCT-grAEfCOUb3BF65I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCT-wrAEfCOUb3BF65I8g" HighValue="0.003"/>
+    </Variable>
+    <Variable xmi:id="_XZCT_ArAEfCOUb3BG55I8g" NameID="cycleLength" Label="1 month = 1 cycle" Comment="">
+      <Attributes xmi:id="_XZCT_QrAEfCOUb3BG55I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCT_grAEfCOUb3BG55I8g" HighValue="1.0"/>
+    </Variable>
+    <Variable xmi:id="_XZCT_wrAEfCOUb3BG55I8g" NameID="p_FailAfterPrimaryOperation" Label="" Comment="">
+      <Attributes xmi:id="_XZCUAArAEfCOUb3BG55I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUAQrAEfCOUb3BH45I8g" HighValue="0.0029559189823693544"/>
+    </Variable>
+    <Variable xmi:id="_XZCUAgrAEfCOUb3BH45I8g" NameID="ForSA_p_FailAfterPrimaryTKA" Label="3.49% aseptic loosening within 1 year" Comment="">
+      <Attributes xmi:id="_XZCUAwrAEfCOUb3BH45I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCUBArAEfCOUb3BH45I8g" HighValue="0.0349"/>
+    </Variable>
+    <Variable xmi:id="_XZCUBQrAEfCOUb3BH45I8g" NameID="p_DieAfterFailPrimaryOperation" Label="Memtsoudis SG, Della Valle AG, Besculides MC, Esposito M, Koulouvaris P, Salvati EA. Risk factors for perioperative mortality after lower extremity arthroplasty: a population-based study of 6,901,324 patient discharges. J Arthroplasty. 2010 Jan;25(1):19-26. doi: 10.1016/j.arth.2008.11.010. Epub 2008 Dec 23. PMID: 19106028." Comment="">
+      <Attributes xmi:id="_XZCUBgrAEfCOUb3BI35I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUBwrAEfCOUb3BI35I8g" HighValue="0.0027000000000000357"/>
+    </Variable>
+    <Variable xmi:id="_XZCUCArAEfCOUb3BI35I8g" NameID="ForSA_p_DieAfterFailPrimaryOperation" Label="0.27% in hospital die after revision TKA" Comment="">
+      <Attributes xmi:id="_XZCUCQrAEfCOUb3BI35I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCUCgrAEfCOUb3BI35I8g" HighValue="0.0027"/>
+    </Variable>
+    <Variable xmi:id="_XZCUCwrAEfCOUb3BJ25I8g" NameID="p_FailWithInstability" Label="Wilson CJ, Theodoulou A, Damarell RA, Krishnan J. Knee instability as the primary cause of failure following Total Knee Arthroplasty (TKA): A systematic review on the patient, surgical and implant characteristics of revised TKA patients. Knee. 2017 Dec;24(6):1271-1281. doi: 10.1016/j.knee.2017.08.060. Epub 2017 Sep 29. PMID: 28970123." Comment="">
+      <Attributes xmi:id="_XZCUDArAEfCOUb3BJ25I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUDQrAEfCOUb3BJ25I8g" HighValue="0.35000000000000003"/>
+    </Variable>
+    <Variable xmi:id="_XZCUDgrAEfCOUb3BJ25I8g" NameID="p_FailWithInstabilityTKA" Label="CJRR Table 26 instability 12.4%" Comment="">
+      <Attributes xmi:id="_XZCUDwrAEfCOUb3BJ25I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUEArAEfCOUb3BK15I8g" HighValue="0.12400000000000001"/>
+    </Variable>
+    <Variable xmi:id="_XZCUEQrAEfCOUb3BK15I8g" NameID="p_DieAfterRevision" Label="" Comment="">
+      <Attributes xmi:id="_XZCUEgrAEfCOUb3BK15I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUEwrAEfCOUb3BK15I8g" HighValue="0.0027000000000000357"/>
+    </Variable>
+    <Variable xmi:id="_XZCUFArAEfCOUb3BK15I8g" NameID="p_InstabilityAfterRevisionTKA" Label="Why Do Revision Total Knee Arthroplasties Fail? A Single-Center Review of 1632 Revision Total Knees Comparing Historic and Modern Cohorts&#xA;Geary, Michael B. ; Macknet, David M. ; Ransone, Michael P. ; Odum, Susan D. ; Springer, Bryan D." Comment="">
+      <Attributes xmi:id="_XZCUFQrAEfCOUb3BL05I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUFgrAEfCOUb3BL05I8g" HighValue="0.0024912106557631875"/>
+    </Variable>
+    <Variable xmi:id="_XZCUFwrAEfCOUb3BL05I8g" NameID="ForSA_p_InstabilityAfterRevisionTKA" Label="14.2% in 61.4 months follow-up" Comment="">
+      <Attributes xmi:id="_XZCUGArAEfCOUb3BL05I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCUGQrAEfCOUb3BL05I8g" HighValue="0.142"/>
+    </Variable>
+    <Variable xmi:id="_XZCUGgrAEfCOUb3BMz5I8g" NameID="p_FailAfterPrimaryTKA" Label="Meehan JP, Danielsen B, Kim SH, Jamali AA, White RH. Younger age is associated with a higher risk of early periprosthetic joint infection and aseptic mechanical failure after total knee arthroplasty. J Bone Joint Surg Am. 2014 Apr 2;96(7):529-35. doi: 10.2106/JBJS.M.00545. PMID: 24695918." Comment="">
+      <Attributes xmi:id="_XZCUGwrAEfCOUb3BMz5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUHArAEfCOUb3BMz5I8g" HighValue="0.0029559189823693544"/>
+    </Variable>
+    <Variable xmi:id="_XZCUHQrAEfCOUb3BMz5I8g" NameID="p_FailAfterPrimaryUKA" Label="CJRR page 60" Comment="">
+      <Attributes xmi:id="_XZCUHgrAEfCOUb3BMz5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUHwrAEfCOUb3BNy5I8g" HighValue="8.16271538025104E-4"/>
+    </Variable>
+    <Variable xmi:id="_XZCUIArAEfCOUb3BNy5I8g" NameID="ForSA_p_FailAfterPrimaryUKA" Label="7.54% in 8 year CJRR page 60" Comment="">
+      <Attributes xmi:id="_XZCUIQrAEfCOUb3BNy5I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCUIgrAEfCOUb3BNy5I8g" HighValue="0.07540000000000001"/>
+    </Variable>
+    <Variable xmi:id="_XZCUIwrAEfCOUb3BNy5I8g" NameID="p_FailWithInstatibilityUKA" Label="6.2% in 24 months Lombardi AV Jr, Kolich MT, Berend KR, Morris MJ, Crawford DA, Adams JB. Revision of Unicompartmental Knee Arthroplasty to Total Knee Arthroplasty: Is It as Good as a Primary Result? J Arthroplasty. 2018 Jul;33(7S):S105-S108. doi: 10.1016/j.arth.2018.03.023. Epub 2018 Mar 17. PMID: 29691172." Comment="">
+      <Attributes xmi:id="_XZCUJArAEfCOUb3BOx5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUJQrAEfCOUb3BOx5I8g" HighValue="0.062000000000000006"/>
+    </Variable>
+    <Variable xmi:id="_XZCUJgrAEfCOUb3BOx5I8g" NameID="p_InstabilityAfterRevisionUKA" Label="Lombardi AV Jr, Kolich MT, Berend KR, Morris MJ, Crawford DA, Adams JB. Revision of Unicompartmental Knee Arthroplasty to Total Knee Arthroplasty: Is It as Good as a Primary Result? J Arthroplasty. 2018 Jul;33(7S):S105-S108. doi: 10.1016/j.arth.2018.03.023. Epub 2018 Mar 17. PMID: 29691172." Comment="">
+      <Attributes xmi:id="_XZCUJwrAEfCOUb3BOx5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUKArAEfCOUb3BOx5I8g" HighValue="5.717518441252789E-4"/>
+    </Variable>
+    <Variable xmi:id="_XZCUKQrAEfCOUb3BPw5I8g" NameID="ForSA_p_InstabilityAfterRevisionUKA" Label="4.1% at 6.1 years - Lombardi" Comment="">
+      <Attributes xmi:id="_XZCUKgrAEfCOUb3BPw5I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCUKwrAEfCOUb3BPw5I8g" HighValue="0.040999999999999995"/>
+    </Variable>
+    <Variable xmi:id="_XZCULArAEfCOUb3BPw5I8g" NameID="p_InstabilityAfterRevision" Label="" Comment="">
+      <Attributes xmi:id="_XZCULQrAEfCOUb3BPw5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCULgrAEfCOUb3BQv5I8g" HighValue="0.0024912106557631875"/>
+    </Variable>
+    <Variable xmi:id="_XZCULwrAEfCOUb3BQv5I8g" NameID="p_FailAfterPrimaryHTO" Label="Keenan OJF, Clement ND, Nutton R, Keating JF. Older age and female gender are independent predictors of early conversion to total knee arthroplasty after high tibial osteotomy. Knee. 2019 Jan;26(1):207-212. doi: 10.1016/j.knee.2018.11.008. Epub 2018 Nov 22. PMID: 30473375." Comment="">
+      <Attributes xmi:id="_XZCUMArAEfCOUb3BQv5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUMQrAEfCOUb3BQv5I8g" HighValue="0.0033158071999042082"/>
+    </Variable>
+    <Variable xmi:id="_XZCUMgrAEfCOUb3BQv5I8g" NameID="ForSA_p_FailAfterPrimaryHTO" Label="and 15-year rate 55% (95% CI 53.3&#x2013;56.7)." Comment="">
+      <Attributes xmi:id="_XZCUMwrAEfCOUb3BRu5I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCUNArAEfCOUb3BRu5I8g" HighValue="0.45"/>
+    </Variable>
+    <Variable xmi:id="_XZCUNQrAEfCOUb3BRu5I8g" NameID="p_FailWithInstabilityHTO" Label="Brian Leung HW, Bruce Tang YH. Outcome of medial open wedge high tibial osteotomy and conversion knee arthroplasty in a local joint replacement centre. Journal of Orthopaedics, Trauma and Rehabilitation. 2023;30(2):215-225. doi:10.1177/22104917231166719" Comment="">
+      <Attributes xmi:id="_XZCUNgrAEfCOUb3BRu5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUNwrAEfCOUb3BRu5I8g" HighValue="0.095"/>
+    </Variable>
+    <Variable xmi:id="_XZCUOArAEfCOUb3BSt5I8g" NameID="DR" Label="discounting for monthly cycles" Comment="">
+      <Attributes xmi:id="_XZCUOQrAEfCOUb3BSt5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUOgrAEfCOUb3BSt5I8g" HighValue="1.0"/>
+    </Variable>
+    <Variable xmi:id="_XZCUOwrAEfCOUb3BSt5I8g" NameID="c_InitialCostPrimaryOperation" Label="Set value at each node" Comment="">
+      <Attributes xmi:id="_XZCUPArAEfCOUb3BSt5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUPQrAEfCOUb3BTs5I8g" HighValue="9947.98"/>
+    </Variable>
+    <Variable xmi:id="_XZCUPgrAEfCOUb3BTs5I8g" NameID="u_WellAfterPrimaryOperation" Label="define at the Markov node" Comment="">
+      <Attributes xmi:id="_XZCUPwrAEfCOUb3BTs5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUQArAEfCOUb3BTs5I8g" HighValue="0.84"/>
+    </Variable>
+    <Variable xmi:id="_XZCUQQrAEfCOUb3BTs5I8g" NameID="u_FailSurgery_no_instability" Label="" Comment="">
+      <Attributes xmi:id="_XZCUQgrAEfCOUb3BUr5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUQwrAEfCOUb3BUr5I8g" HighValue="0.61"/>
+    </Variable>
+    <Variable xmi:id="_XZCURArAEfCOUb3BUr5I8g" NameID="u_FailSurgery_with_instability" Label="assume as it worse as PJI" Comment="">
+      <Attributes xmi:id="_XZCURQrAEfCOUb3BUr5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCURgrAEfCOUb3BUr5I8g" HighValue="0.5"/>
+    </Variable>
+    <Variable xmi:id="_XZCURwrAEfCOUb3BVq5I8g" NameID="u_WellAfterRevisionByPrimaryTKA" Label="define at the Markov node" Comment="">
+      <Attributes xmi:id="_XZCUSArAEfCOUb3BVq5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUSQrAEfCOUb3BVq5I8g" HighValue="0.84"/>
+    </Variable>
+    <Variable xmi:id="_XZCUSgrAEfCOUb3BVq5I8g" NameID="u_WellAfterHighStabilityImplant" Label="" Comment="">
+      <Attributes xmi:id="_XZCUSwrAEfCOUb3BVq5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUTArAEfCOUb3BWp5I8g" HighValue="0.74"/>
+    </Variable>
+    <Variable xmi:id="_XZCUTQrAEfCOUb3BWp5I8g" NameID="_post_analysis" Label="" Comment="">
+      <Attributes xmi:id="_XZCUTgrAEfCOUb3BWp5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUTwrAEfCOUb3BWp5I8g"/>
+    </Variable>
+    <Variable xmi:id="_XZCUUArAEfCOUb3BWp5I8g" NameID="DiscountRate" Label="" Comment="">
+      <Attributes xmi:id="_XZCUUQrAEfCOUb3BXo5I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCUUgrAEfCOUb3BXo5I8g" HighValue="0.03"/>
+    </Variable>
+    <Variable xmi:id="_XZCUUwrAEfCOUb3BXo5I8g" NameID="c_InitialCostRevisionByPrimaryTKA" Label="" Comment="">
+      <Attributes xmi:id="_XZCUVArAEfCOUb3BXo5I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCUVQrAEfCOUb3BXo5I8g" HighValue="8178.0"/>
+    </Variable>
+    <Variable xmi:id="_XZCUVgrAEfCOUb3BYn5I8g" NameID="c_PhysicianCostForTKA" Label="" Comment="">
+      <Attributes xmi:id="_XZCUVwrAEfCOUb3BYn5I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCUWArAEfCOUb3BYn5I8g" LowValue="900.0" HighValue="1350.0"/>
+    </Variable>
+    <Variable xmi:id="_XZCUWQrAEfCOUb3BYn5I8g" NameID="c_PhysicianCostForUKA" Label="" Comment="">
+      <Attributes xmi:id="_XZCUWgrAEfCOUb3BYn5I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCUWwrAEfCOUb3BZm5I8g" LowValue="867.0" HighValue="1267.0"/>
+    </Variable>
+    <Variable xmi:id="_XZCUXArAEfCOUb3BZm5I8g" NameID="c_PhysicianCostForMOWHTO" Label="Waiting for Seb's confirmation" Comment="">
+      <Attributes xmi:id="_XZCUXQrAEfCOUb3BZm5I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCUXgrAEfCOUb3BZm5I8g" LowValue="750.0" HighValue="1150.0"/>
+    </Variable>
+    <Variable xmi:id="_XZCUXwrAEfCOUb3BZm5I8g" NameID="c_PhysicianCostForRevision" Label="" Comment="">
+      <Attributes xmi:id="_XZCUYArAEfCOUb3Bal5I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCUYQrAEfCOUb3Bal5I8g" LowValue="1100.0" HighValue="1700.0"/>
+    </Variable>
+    <Variable xmi:id="_XZCUYgrAEfCOUb3Bal5I8g" NameID="c_InitialCostTKA" Label="Sunnybrook Case Costing" Comment="">
+      <Attributes xmi:id="_XZCUYwrAEfCOUb3Bal5I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCUZArAEfCOUb3Bal5I8g" LowValue="6000.0" HighValue="8009.979999999999"/>
+    </Variable>
+    <Variable xmi:id="_XZCUZQrAEfCOUb3Bbk5I8g" NameID="c_InitialCostUKA" Label="Sunnybrook Case Costing" Comment="">
+      <Attributes xmi:id="_XZCUZgrAEfCOUb3Bbk5I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCUZwrAEfCOUb3Bbk5I8g" LowValue="6000.0" HighValue="8272.69"/>
+    </Variable>
+    <Variable xmi:id="_XZCUaArAEfCOUb3Bbk5I8g" NameID="c_InitialCostHTO" Label="Sunnybrook Case Costing" Comment="">
+      <Attributes xmi:id="_XZCUaQrAEfCOUb3Bbk5I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCUagrAEfCOUb3Bcj5I8g" LowValue="6000.0" HighValue="8091.68"/>
+    </Variable>
+    <Variable xmi:id="_XZCUawrAEfCOUb3Bcj5I8g" NameID="c_InitialCostRevisionByHighStabilityImplant" Label="Sunnybrook Case costing" Comment="">
+      <Attributes xmi:id="_XZCUbArAEfCOUb3Bcj5I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCUbQrAEfCOUb3Bcj5I8g" LowValue="10000.0" HighValue="14739.0"/>
+    </Variable>
+    <Variable xmi:id="_XZCUbgrAEfCOUb3Bcj5I8g" NameID="c_meanPhysicianCostForTKA" Label="the main billing code from the schedule of benefits for each procedure" Comment="">
+      <Attributes xmi:id="_XZCUbwrAEfCOUb3Bdi5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUcArAEfCOUb3Bdi5I8g" LowValue="900.0" HighValue="1350.0"/>
+    </Variable>
+    <Variable xmi:id="_XZCUcQrAEfCOUb3Bdi5I8g" NameID="c_sdPhysicianCostForTKA" Label="Assumption" Comment="">
+      <Attributes xmi:id="_XZCUcgrAEfCOUb3Bdi5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUcwrAEfCOUb3Bdi5I8g" HighValue="387.6"/>
+    </Variable>
+    <Variable xmi:id="_XZCUdArAEfCOUb3Beh5I8g" NameID="c_meanPhysicianCostForUKA" Label="the main billing code from the schedule of benefits for each procedure" Comment="">
+      <Attributes xmi:id="_XZCUdQrAEfCOUb3Beh5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUdgrAEfCOUb3Beh5I8g" LowValue="867.0" HighValue="1267.0"/>
+    </Variable>
+    <Variable xmi:id="_XZCUdwrAEfCOUb3Beh5I8g" NameID="c_sdPhysicianCostForUKA" Label="Assumption" Comment="">
+      <Attributes xmi:id="_XZCUeArAEfCOUb3Beh5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUeQrAEfCOUb3Bfg5I8g" HighValue="387.6"/>
+    </Variable>
+    <Variable xmi:id="_XZCUegrAEfCOUb3Bfg5I8g" NameID="c_meanPhysicianCostForRevision" Label="the main billing code from the schedule of benefits for each procedure" Comment="">
+      <Attributes xmi:id="_XZCUewrAEfCOUb3Bfg5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUfArAEfCOUb3Bfg5I8g" LowValue="1100.0" HighValue="1700.0"/>
+    </Variable>
+    <Variable xmi:id="_XZCUfQrAEfCOUb3Bfg5I8g" NameID="c_sdPhysicianCostForRevision" Label="assumption" Comment="">
+      <Attributes xmi:id="_XZCUfgrAEfCOUb3Bgf5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUfwrAEfCOUb3Bgf5I8g" HighValue="635.2"/>
+    </Variable>
+    <Variable xmi:id="_XZCUgArAEfCOUb3Bgf5I8g" NameID="c_meanPhysicianCostForHTO" Label="the main billing code from the schedule of benefits for each procedure" Comment="">
+      <Attributes xmi:id="_XZCUgQrAEfCOUb3Bgf5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUggrAEfCOUb3Bgf5I8g" LowValue="750.0" HighValue="1150.0"/>
+    </Variable>
+    <Variable xmi:id="_XZCUgwrAEfCOUb3Bhe5I8g" NameID="c_sdPhysicianCostForHTO" Label="assumption" Comment="">
+      <Attributes xmi:id="_XZCUhArAEfCOUb3Bhe5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUhQrAEfCOUb3Bhe5I8g" HighValue="387.6"/>
+    </Variable>
+    <Variable xmi:id="_XZCUhgrAEfCOUb3Bhe5I8g" NameID="p_DieGenPop_startAge45" Label="General probability of death start age at45 to 90 - from StatCanada year 2023" Comment="">
+      <Attributes xmi:id="_XZCUhwrAEfCOUb3Bhe5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUiArAEfCOUb3Bid5I8g" HighValue="1.526E-4"/>
+    </Variable>
+    <Variable xmi:id="_XZCUiQrAEfCOUb3Bid5I8g" NameID="p_DieMaleOnly_startAge45" Label="Probability of death for Male Canadian - conversion per month- from Stat Can" Comment="">
+      <Attributes xmi:id="_XZCUigrAEfCOUb3Bid5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUiwrAEfCOUb3Bid5I8g" HighValue="1.994E-4"/>
+    </Variable>
+    <Variable xmi:id="_XZCUjArAEfCOUb3Bid5I8g" NameID="p_DieFemaleOnly_startAge45" Label="Female Canadian general population mortality Starting age at 45 to 90 - Stat Canada year 2023" Comment="">
+      <Attributes xmi:id="_XZCUjQrAEfCOUb3Bjc5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUjgrAEfCOUb3Bjc5I8g" HighValue="1.092E-4"/>
+    </Variable>
+    <Variable xmi:id="_XZCUjwrAEfCOUb3Bjc5I8g" NameID="p_Die" Label="" Comment="">
+      <Attributes xmi:id="_XZCUkArAEfCOUb3Bjc5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUkQrAEfCOUb3Bjc5I8g" HighValue="1.526E-4"/>
+    </Variable>
+    <Variable xmi:id="_XZCUkgrAEfCOUb3Bkb5I8g" NameID="c_physician_RevisionwithPrimaryTKA" Label="" Comment="">
+      <Attributes xmi:id="_XZCUkwrAEfCOUb3Bkb5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUlArAEfCOUb3Bkb5I8g" HighValue="3175.9999999999995"/>
+    </Variable>
+    <Variable xmi:id="_XZCUlQrAEfCOUb3Bkb5I8g" NameID="u_FailSurgery_no_instability_meanTKA" Label="Konopka et al." Comment="">
+      <Attributes xmi:id="_XZCUlgrAEfCOUb3Bkb5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUlwrAEfCOUb3Bla5I8g" LowValue="1.0E-5" HighValue="0.61"/>
+    </Variable>
+    <Variable xmi:id="_XZCUmArAEfCOUb3Bla5I8g" NameID="u_FailSurgery_no_instability_SDTKA" Label="Konopka" Comment="">
+      <Attributes xmi:id="_XZCUmQrAEfCOUb3Bla5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUmgrAEfCOUb3Bla5I8g" LowValue="1.0E-5" HighValue="0.2"/>
+    </Variable>
+    <Variable xmi:id="_XZCUmwrAEfCOUb3Bla5I8g" NameID="u_FailSurgery_with_instability_meanTKA" Label="Konopka, assume as it worse as PJI" Comment="">
+      <Attributes xmi:id="_XZCUnArAEfCOUb3BmZ5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUnQrAEfCOUb3BmZ5I8g" LowValue="1.0E-5" HighValue="0.5"/>
+    </Variable>
+    <Variable xmi:id="_XZCUngrAEfCOUb3BmZ5I8g" NameID="u_FailSurgery_with_instability_SDTKA" Label="Konopka, assume as it worse as PJI" Comment="">
+      <Attributes xmi:id="_XZCUnwrAEfCOUb3BmZ5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUoArAEfCOUb3BmZ5I8g" LowValue="1.0E-5" HighValue="0.3"/>
+    </Variable>
+    <Variable xmi:id="_XZCUoQrAEfCOUb3BnY5I8g" NameID="u_WellAfterHighStabilityImplant_mean" Label="Konopka, revision" Comment="">
+      <Attributes xmi:id="_XZCUogrAEfCOUb3BnY5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUowrAEfCOUb3BnY5I8g" LowValue="1.0E-5" HighValue="0.74"/>
+    </Variable>
+    <Variable xmi:id="_XZCUpArAEfCOUb3BnY5I8g" NameID="u_WellAfterHighStabilityImplant_SD" Label="Konopka" Comment="">
+      <Attributes xmi:id="_XZCUpQrAEfCOUb3BnY5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUpgrAEfCOUb3BoX5I8g" LowValue="1.0E-5" HighValue="0.18"/>
+    </Variable>
+    <Variable xmi:id="_XZCUpwrAEfCOUb3BoX5I8g" NameID="u_WellAfterPrimaryOperation_TKA_mean" Label="Konopka" Comment="">
+      <Attributes xmi:id="_XZCUqArAEfCOUb3BoX5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUqQrAEfCOUb3BoX5I8g" LowValue="1.0E-5" HighValue="0.84"/>
+    </Variable>
+    <Variable xmi:id="_XZCUqgrAEfCOUb3BoX5I8g" NameID="u_WellAfterPrimaryOperation_TKA_SD" Label="Konopka" Comment="">
+      <Attributes xmi:id="_XZCUqwrAEfCOUb3BpW5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUrArAEfCOUb3BpW5I8g" LowValue="1.0E-5" HighValue="0.15"/>
+    </Variable>
+    <Variable xmi:id="_XZCUrQrAEfCOUb3BpW5I8g" NameID="u_WellAfterRevisionByPrimaryTKA_mean" Label="Konopka CUA paper" Comment="">
+      <Attributes xmi:id="_XZCUrgrAEfCOUb3BpW5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUrwrAEfCOUb3BpW5I8g" LowValue="1.0E-5" HighValue="0.772"/>
+    </Variable>
+    <Variable xmi:id="_XZCUsArAEfCOUb3BqV5I8g" NameID="u_WellAfterRevisionByPrimaryTKA_SD" Label="Assumption 20% of mean = sd" Comment="">
+      <Attributes xmi:id="_XZCUsQrAEfCOUb3BqV5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUsgrAEfCOUb3BqV5I8g" HighValue="0.1544"/>
+    </Variable>
+    <Variable xmi:id="_XZCUswrAEfCOUb3BqV5I8g" NameID="u_FailSurgery_no_instability_TKA" Label="" Comment="">
+      <Attributes xmi:id="_XZCUtArAEfCOUb3BqV5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUtQrAEfCOUb3BrU5I8g" LowValue="1.0E-5" HighValue="0.61"/>
+    </Variable>
+    <Variable xmi:id="_XZCUtgrAEfCOUb3BrU5I8g" NameID="u_FailSurgery_with_instability_TKA" Label="" Comment="">
+      <Attributes xmi:id="_XZCUtwrAEfCOUb3BrU5I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCUuArAEfCOUb3BrU5I8g" LowValue="0.4" HighValue="0.6"/>
+    </Variable>
+    <Variable xmi:id="_XZCUuQrAEfCOUb3BrU5I8g" NameID="u_WellAfterPrimaryOperation_TKA" Label="" Comment="">
+      <Attributes xmi:id="_XZCUugrAEfCOUb3BsT5I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCUuwrAEfCOUb3BsT5I8g" LowValue="0.69" HighValue="0.99"/>
+    </Variable>
+    <Variable xmi:id="_XZCUvArAEfCOUb3BsT5I8g" NameID="u_FailSurgery_no_instability_meanUKA" Label="Konopka main paper" Comment="">
+      <Attributes xmi:id="_XZCUvQrAEfCOUb3BsT5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUvgrAEfCOUb3BsT5I8g" LowValue="1.0E-5" HighValue="0.69"/>
+    </Variable>
+    <Variable xmi:id="_XZCUvwrAEfCOUb3BtS5I8g" NameID="u_FailSurgery_no_instability_SDUKA" Label="" Comment="">
+      <Attributes xmi:id="_XZCUwArAEfCOUb3BtS5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUwQrAEfCOUb3BtS5I8g" LowValue="1.0E-5" HighValue="0.14"/>
+    </Variable>
+    <Variable xmi:id="_XZCUwgrAEfCOUb3BtS5I8g" NameID="u_FailSurgery_no_instability_UKA" Label="" Comment="">
+      <Attributes xmi:id="_XZCUwwrAEfCOUb3BtS5I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCUxArAEfCOUb3BuR5I8g" LowValue="0.55" HighValue="0.83"/>
+    </Variable>
+    <Variable xmi:id="_XZCUxQrAEfCOUb3BuR5I8g" NameID="u_WellAfterPrimaryOperation_UKA_mean" Label="" Comment="">
+      <Attributes xmi:id="_XZCUxgrAEfCOUb3BuR5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUxwrAEfCOUb3BuR5I8g" LowValue="1.0E-5" HighValue="0.87"/>
+    </Variable>
+    <Variable xmi:id="_XZCUyArAEfCOUb3BuR5I8g" NameID="u_WellAfterPrimaryOperation_UKA_SD" Label="" Comment="">
+      <Attributes xmi:id="_XZCUyQrAEfCOUb3BvQ5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCUygrAEfCOUb3BvQ5I8g" LowValue="1.0E-5" HighValue="0.13"/>
+    </Variable>
+    <Variable xmi:id="_XZCUywrAEfCOUb3BvQ5I8g" NameID="u_WellAfterPrimaryOperation_UKA" Label="" Comment="">
+      <Attributes xmi:id="_XZCUzArAEfCOUb3BvQ5I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCUzQrAEfCOUb3BvQ5I8g" LowValue="0.74" HighValue="1.0"/>
+    </Variable>
+    <Variable xmi:id="_XZCUzgrAEfCOUb3BwP5I8g" NameID="u_FailSurgery_no_instability_HTO" Label="" Comment="">
+      <Attributes xmi:id="_XZCUzwrAEfCOUb3BwP5I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCU0ArAEfCOUb3BwP5I8g" LowValue="0.55" HighValue="0.83"/>
+    </Variable>
+    <Variable xmi:id="_XZCU0QrAEfCOUb3BwP5I8g" NameID="u_FailSurgery_no_instability_meanHTO" Label="" Comment="">
+      <Attributes xmi:id="_XZCU0grAEfCOUb3BwP5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCU0wrAEfCOUb3BxO5I8g" LowValue="1.0E-5" HighValue="0.69"/>
+    </Variable>
+    <Variable xmi:id="_XZCU1ArAEfCOUb3BxO5I8g" NameID="u_FailSurgery_no_instability_sdHTO" Label="" Comment="">
+      <Attributes xmi:id="_XZCU1QrAEfCOUb3BxO5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCU1grAEfCOUb3BxO5I8g" LowValue="1.0E-5" HighValue="0.14"/>
+    </Variable>
+    <Variable xmi:id="_XZCU1wrAEfCOUb3BxO5I8g" NameID="u_WellAfterHighStabilityImplant_HTOmean" Label="" Comment="">
+      <Attributes xmi:id="_XZCU2ArAEfCOUb3ByN5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCU2QrAEfCOUb3ByN5I8g" LowValue="1.0E-5" HighValue="0.804"/>
+    </Variable>
+    <Variable xmi:id="_XZCU2grAEfCOUb3ByN5I8g" NameID="u_WellAfterHighStabilityImplant_HTOsd" Label="" Comment="">
+      <Attributes xmi:id="_XZCU2wrAEfCOUb3ByN5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCU3ArAEfCOUb3ByN5I8g" LowValue="1.0E-5" HighValue="0.16080000000000003"/>
+    </Variable>
+    <Variable xmi:id="_XZCU3QrAEfCOUb3BzM5I8g" NameID="u_WellAfterHighStabilityImplant_HTO" Label="" Comment="">
+      <Attributes xmi:id="_XZCU3grAEfCOUb3BzM5I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCU3wrAEfCOUb3BzM5I8g" LowValue="0.56" HighValue="0.92"/>
+    </Variable>
+    <Variable xmi:id="_XZCU4ArAEfCOUb3BzM5I8g" NameID="u_WellAfterPrimaryOperation_HTO_mean" Label="" Comment="">
+      <Attributes xmi:id="_XZCU4QrAEfCOUb3BzM5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCU4grAEfCOUb3B0L5I8g" LowValue="1.0E-5" HighValue="0.835"/>
+    </Variable>
+    <Variable xmi:id="_XZCU4wrAEfCOUb3B0L5I8g" NameID="u_WellAfterPrimaryOperation_HTO_sd" Label="" Comment="">
+      <Attributes xmi:id="_XZCU5ArAEfCOUb3B0L5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCU5QrAEfCOUb3B0L5I8g" LowValue="1.0E-5" HighValue="0.167"/>
+    </Variable>
+    <Variable xmi:id="_XZCU5grAEfCOUb3B0L5I8g" NameID="u_WellAfterPrimaryOperation_HTO" Label="" Comment="">
+      <Attributes xmi:id="_XZCU5wrAEfCOUb3B1K5I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCU6ArAEfCOUb3B1K5I8g" LowValue="0.804" HighValue="0.835"/>
+    </Variable>
+    <Variable xmi:id="_XZCU6QrAEfCOUb3B1K5I8g" NameID="u_WellAfterRevisionByPrimaryTKAforHTO" Label="" Comment="">
+      <Attributes xmi:id="_XZCU6grAEfCOUb3B1K5I8g" key="tornado" value="true"/>
+      <SensitivityRange xmi:id="_XZCU6wrAEfCOUb3B1K5I8g" LowValue="0.69" HighValue="0.8040000000000002"/>
+    </Variable>
+    <Variable xmi:id="_XZCU7ArAEfCOUb3B2J5I8g" NameID="u_WellAfterRevisionByPrimaryTKAforHTO_mean" Label="" Comment="">
+      <Attributes xmi:id="_XZCU7QrAEfCOUb3B2J5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCU7grAEfCOUb3B2J5I8g" LowValue="1.0E-5" HighValue="0.804"/>
+    </Variable>
+    <Variable xmi:id="_XZCU7wrAEfCOUb3B2J5I8g" NameID="u_WellAfterRevisionByPrimaryTKAforHTO_sd" Label="" Comment="">
+      <Attributes xmi:id="_XZCU8ArAEfCOUb3B2J5I8g" key="tornado" value="false"/>
+      <SensitivityRange xmi:id="_XZCU8QrAEfCOUb3B3I5I8g" LowValue="1.0E-5" HighValue="0.16080000000000003"/>
+    </Variable>
+    <CategoriesRoot xmi:id="_XZCU8grAEfCOUb3B3I5I8g"/>
+    <PreferenceSet xmi:id="_XZCU8wrAEfCOUb3B3I5I8g" NameID="Pref. set 1">
+      <Preference xmi:id="_XZCU9ArAEfCOUb3B3I5I8g" Name="locale" Value="en_TH"/>
+      <Preference xmi:id="_XZCU9QrAEfCOUb3B3I5I8g" Name="calcType" Value="ct_costEff"/>
+      <Preference xmi:id="_XZCU9grAEfCOUb3B4H5I8g" Name="numberOfEnabledPayoffs" Value="2"/>
+      <Preference xmi:id="_XZCU9wrAEfCOUb3B4H5I8g" Name="ceCostPayoff" Value="1"/>
+      <Preference xmi:id="_XZCU-ArAEfCOUb3B4H5I8g" Name="ceEffPayoff" Value="2"/>
+      <Preference xmi:id="_XZCU-QrAEfCOUb3B4H5I8g" Name="useGlobalDiscounting" Value="false"/>
+      <Preference xmi:id="_XZCU-grAEfCOUb3B4H5I8g" Name="globalDiscountingMarkovCycleLength" Value=""/>
+      <Preference xmi:id="_XZCU-wrAEfCOUb3B5G5I8g" Name="globalDiscountingDESTimeUnit" Value=""/>
+      <Preference xmi:id="_XZCU_ArAEfCOUb3B5G5I8g" Name="partSASurvivalTimeUnit" Value="1"/>
+      <Preference xmi:id="_XZCU_QrAEfCOUb3B5G5I8g" Name="globalDiscountingDiscountRate1" Value=""/>
+      <Preference xmi:id="_XZCU_grAEfCOUb3B5G5I8g" Name="globalDiscountingDiscountRate2" Value=""/>
+      <Preference xmi:id="_XZCU_wrAEfCOUb3B5G5I8g" Name="useCustomPayoffNames" Value="false"/>
+      <Preference xmi:id="_XZCVAArAEfCOUb3B6F5I8g" Name="customPayoffName1" Value=""/>
+      <Preference xmi:id="_XZCVAQrAEfCOUb3B6F5I8g" Name="customPayoffName2" Value=""/>
+      <Preference xmi:id="_XZCVAgrAEfCOUb3B6F5I8g" Name="M2EP_1" Value="true"/>
+      <Preference xmi:id="_XZCVAwrAEfCOUb3B6F5I8g" Name="M2EP_2" Value="true"/>
+      <Preference xmi:id="_XZCVBArAEfCOUb3B6F5I8g" Name="ProbShowAsPercent" Value="false"/>
+      <Preference xmi:id="_XZCVBQrAEfCOUb3B7E5I8g" Name="probDecTrailZeros" Value="true"/>
+      <Preference xmi:id="_XZCVBgrAEfCOUb3B7E5I8g" Name="DecPlacesProb" Value="3"/>
+      <Preference xmi:id="_XZCVBwrAEfCOUb3B7E5I8g" Name="invertIncrementalEff" Value="false"/>
+      <Preference xmi:id="_XZCVCArAEfCOUb3B7E5I8g" Name="drawGraphCostY" Value="drawGraphCostY"/>
+      <Preference xmi:id="_XZCVCQrAEfCOUb3B7E5I8g" Name="rollbackShowNetBen" Value="true"/>
+      <Preference xmi:id="_XZCVCgrAEfCOUb3B8D5I8g" Name="useMaximumCost" Value="false"/>
+      <Preference xmi:id="_XZCVCwrAEfCOUb3B8D5I8g" Name="useMinimumEffectiveness" Value="false"/>
+      <Preference xmi:id="_XZCVDArAEfCOUb3B8D5I8g" Name="minimumEffectiveness" Value="0.01"/>
+      <Preference xmi:id="_XZCVDQrAEfCOUb3B8D5I8g" Name="maximumCost" Value="20000."/>
+      <Preference xmi:id="_XZCVDgrAEfCOUb3B8D5I8g" Name="willingnessToPay" Value="4166.67"/>
+      <Preference xmi:id="_XZCVDwrAEfCOUb3B9C5I8g" Name="average" Value="0."/>
+      <Preference xmi:id="_XZCVEArAEfCOUb3B9C5I8g" Name="showAverageCE" Value="true"/>
+      <Preference xmi:id="_XZCVEQrAEfCOUb3B9C5I8g" Name="showCommonBaseline" Value="true"/>
+      <Preference xmi:id="_XZCVEgrAEfCOUb3B9C5I8g" Name="showIncreasingEff" Value="true"/>
+      <Preference xmi:id="_XZCVEwrAEfCOUb3B9C5I8g" Name="useAttributesWeights" Value="false"/>
+      <Preference xmi:id="_XZCVFArAEfCOUb3B-B5I8g" Name="attributeWeight1" Value=""/>
+      <Preference xmi:id="_XZCVFQrAEfCOUb3B-B5I8g" Name="attributeWeight2" Value=""/>
+      <Preference xmi:id="_XZCVFgrAEfCOUb3B-B5I8g" Name="markovDefaultTerminationCondition" Value="_stage = 540"/>
+      <Preference xmi:id="_XZCVFwrAEfCOUb3B-B5I8g" Name="monteNumSamples" Value="3000"/>
+      <Preference xmi:id="_XZCVGArAEfCOUb3B-B5I8g" Name="runSensitivityMicrosimulation" Value="false"/>
+      <Preference xmi:id="_XZCVGQrAEfCOUb3B_A5I8g" Name="2saWay0" Value="u_WellAfterPrimaryOperation_TKA"/>
+      <Preference xmi:id="_XZCVGgrAEfCOUb3B_A5I8g" Name="2saWay1" Value="u_WellAfterPrimaryOperation_UKA"/>
+    </PreferenceSet>
+  </tree:Tree>
+  <notation:Diagram xmi:id="_XZCVGwrAEfCOUb3B_A5I8g" type="TreeDocument" element="#_XZBscArAEfCOUb3BA_5I8g" measurementUnit="Himetric">
+    <children xmi:id="_XZCVHArAEfCOUb3B_A5I8g" type="TreeDocument_Tree">
+      <children xmi:id="_XZCVHQrAEfCOUb3B_A5I8g" type="DecisionNode" element="#_XZBscQrAEfCOUb3BA_5I8g">
+        <children xmi:id="_XZCVHgrAEfCOUb3BA_5I8g" type="TreeNode_Label"/>
+        <children xmi:id="_XZCVHwrAEfCOUb3BA_5I8g" type="TreeNode_Probability"/>
+        <children xmi:id="_XZCVIArAEfCOUb3BA_5I8g" type="TreeNode_Variables"/>
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_XZCVIQrAEfCOUb3BA_5I8g" fontName="Segoe UI" lineColor="0"/>
+      </children>
+      <children xmi:id="_XZCVIgrAEfCOUb3BA_5I8g" type="MarkovNode" element="#_XZBtLgrAEfCOUb3BmZ5I8g">
+        <children xmi:id="_XZCVIwrAEfCOUb3BB-5I8g" type="TreeNode_Label"/>
+        <children xmi:id="_XZCVJArAEfCOUb3BB-5I8g" type="TreeNode_Probability"/>
+        <children xmi:id="_XZCVJQrAEfCOUb3BB-5I8g" type="TreeNode_Variables"/>
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_XZCVJgrAEfCOUb3BB-5I8g" fontName=".AppleSystemUIFont" lineColor="0"/>
+      </children>
+      <children xmi:id="_XZCVJwrAEfCOUb3BB-5I8g" type="MarkovNode" element="#_XZBsvgrAEfCOUb3BPw5I8g">
+        <children xmi:id="_XZCVKArAEfCOUb3BC95I8g" type="TreeNode_Label"/>
+        <children xmi:id="_XZCVKQrAEfCOUb3BC95I8g" type="TreeNode_Probability"/>
+        <children xmi:id="_XZCVKgrAEfCOUb3BC95I8g" type="TreeNode_Variables"/>
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_XZCVKwrAEfCOUb3BC95I8g" fontName=".AppleSystemUIFont" lineColor="0"/>
+      </children>
+      <children xmi:id="_XZCVLQrAEfCOUb3BD85I8g" type="MarkovNode" element="#_XZBtPArAEfCOUb3BoX5I8g">
+        <children xmi:id="_XZCVLgrAEfCOUb3BD85I8g" type="TreeNode_Label"/>
+        <children xmi:id="_XZCVLwrAEfCOUb3BD85I8g" type="TreeNode_Probability"/>
+        <children xmi:id="_XZCVMArAEfCOUb3BD85I8g" type="TreeNode_Variables"/>
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_XZCVMQrAEfCOUb3BD85I8g" fontName=".AppleSystemUIFont" lineColor="0"/>
+      </children>
+      <children xmi:id="_XZCVMgrAEfCOUb3BE75I8g" type="ChanceNode" element="#_XZBs8wrAEfCOUb3Bal5I8g">
+        <children xmi:id="_XZCVMwrAEfCOUb3BE75I8g" type="TreeNode_Label"/>
+        <children xmi:id="_XZCVNArAEfCOUb3BE75I8g" type="TreeNode_Probability"/>
+        <children xmi:id="_XZCVNQrAEfCOUb3BE75I8g" type="TreeNode_Variables"/>
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_XZCVNgrAEfCOUb3BE75I8g" fontName=".AppleSystemUIFont" lineColor="0"/>
+      </children>
+      <children xmi:id="_XZCVNwrAEfCOUb3BF65I8g" type="ChanceNode" element="#_XZBsygrAEfCOUb3BSt5I8g">
+        <children xmi:id="_XZCVOArAEfCOUb3BF65I8g" type="TreeNode_Label"/>
+        <children xmi:id="_XZCVOQrAEfCOUb3BF65I8g" type="TreeNode_Probability"/>
+        <children xmi:id="_XZCVOgrAEfCOUb3BF65I8g" type="TreeNode_Variables"/>
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_XZCVOwrAEfCOUb3BF65I8g" fontName=".AppleSystemUIFont" lineColor="0"/>
+      </children>
+      <children xmi:id="_XZCVPArAEfCOUb3BG55I8g" type="ChanceNode" element="#_XZBtDgrAEfCOUb3Bfg5I8g">
+        <children xmi:id="_XZCVPQrAEfCOUb3BG55I8g" type="TreeNode_Label"/>
+        <children xmi:id="_XZCVPgrAEfCOUb3BG55I8g" type="TreeNode_Probability"/>
+        <children xmi:id="_XZCVPwrAEfCOUb3BG55I8g" type="TreeNode_Variables"/>
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_XZCVQArAEfCOUb3BG55I8g" fontName=".AppleSystemUIFont" lineColor="0"/>
+      </children>
+      <children xmi:id="_XZCVQQrAEfCOUb3BH45I8g" type="TerminalNode" element="#_XZBs8ArAEfCOUb3BZm5I8g">
+        <children xmi:id="_XZCVQgrAEfCOUb3BH45I8g" type="TreeNode_Label"/>
+        <children xmi:id="_XZCVQwrAEfCOUb3BH45I8g" type="TreeNode_Probability"/>
+        <children xmi:id="_XZCVRArAEfCOUb3BH45I8g" type="TreeNode_Variables"/>
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_XZCVRQrAEfCOUb3BH45I8g" fontName=".AppleSystemUIFont" lineColor="0"/>
+      </children>
+      <children xmi:id="_XZCVRgrAEfCOUb3BI35I8g" type="ChanceNode" element="#_XZBs1QrAEfCOUb3BUr5I8g">
+        <children xmi:id="_XZCVRwrAEfCOUb3BI35I8g" type="TreeNode_Label"/>
+        <children xmi:id="_XZCVSArAEfCOUb3BI35I8g" type="TreeNode_Probability"/>
+        <children xmi:id="_XZCVSQrAEfCOUb3BI35I8g" type="TreeNode_Variables"/>
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_XZCVSgrAEfCOUb3BI35I8g" fontName=".AppleSystemUIFont" lineColor="0"/>
+      </children>
+      <children xmi:id="_XZCVSwrAEfCOUb3BJ25I8g" type="ChanceNode" element="#_XZBs3QrAEfCOUb3BVq5I8g">
+        <children xmi:id="_XZCVTArAEfCOUb3BJ25I8g" type="TreeNode_Label"/>
+        <children xmi:id="_XZC6kArAEfCOUb3BJ25I8g" type="TreeNode_Probability"/>
+        <children xmi:id="_XZC6kQrAEfCOUb3BJ25I8g" type="TreeNode_Variables"/>
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_XZC6kgrAEfCOUb3BJ25I8g" fontName=".AppleSystemUIFont" lineColor="0"/>
+      </children>
+      <children xmi:id="_XZC6kwrAEfCOUb3BK15I8g" type="TerminalNode" element="#_XZBs2ArAEfCOUb3BUr5I8g">
+        <children xmi:id="_XZC6lArAEfCOUb3BK15I8g" type="TreeNode_Label"/>
+        <children xmi:id="_XZC6lQrAEfCOUb3BK15I8g" type="TreeNode_Probability"/>
+        <children xmi:id="_XZC6lgrAEfCOUb3BK15I8g" type="TreeNode_Variables"/>
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_XZC6lwrAEfCOUb3BK15I8g" fontName=".AppleSystemUIFont" lineColor="0"/>
+      </children>
+      <children xmi:id="_XZC6mArAEfCOUb3BL05I8g" type="TerminalNode" element="#_XZBs7QrAEfCOUb3BZm5I8g">
+        <children xmi:id="_XZC6mQrAEfCOUb3BL05I8g" type="TreeNode_Label"/>
+        <children xmi:id="_XZC6mgrAEfCOUb3BL05I8g" type="TreeNode_Probability"/>
+        <children xmi:id="_XZC6mwrAEfCOUb3BL05I8g" type="TreeNode_Variables"/>
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_XZC6nArAEfCOUb3BL05I8g" fontName=".AppleSystemUIFont" lineColor="0"/>
+      </children>
+      <children xmi:id="_XZC6nQrAEfCOUb3BMz5I8g" type="ChanceNode" element="#_XZBs4ArAEfCOUb3BWp5I8g">
+        <children xmi:id="_XZC6ngrAEfCOUb3BMz5I8g" type="TreeNode_Label"/>
+        <children xmi:id="_XZC6nwrAEfCOUb3BMz5I8g" type="TreeNode_Probability"/>
+        <children xmi:id="_XZC6oArAEfCOUb3BMz5I8g" type="TreeNode_Variables"/>
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_XZC6oQrAEfCOUb3BMz5I8g" fontName=".AppleSystemUIFont" lineColor="0"/>
+      </children>
+      <children xmi:id="_XZC6ogrAEfCOUb3BNy5I8g" type="TerminalNode" element="#_XZBs6ArAEfCOUb3BYn5I8g">
+        <children xmi:id="_XZC6owrAEfCOUb3BNy5I8g" type="TreeNode_Label"/>
+        <children xmi:id="_XZC6pArAEfCOUb3BNy5I8g" type="TreeNode_Probability"/>
+        <children xmi:id="_XZC6pQrAEfCOUb3BNy5I8g" type="TreeNode_Variables"/>
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_XZC6pgrAEfCOUb3BNy5I8g" fontName=".AppleSystemUIFont" lineColor="0"/>
+      </children>
+      <children xmi:id="_XZC6pwrAEfCOUb3BOx5I8g" type="TerminalNode" element="#_XZBs4wrAEfCOUb3BXo5I8g">
+        <children xmi:id="_XZC6qArAEfCOUb3BOx5I8g" type="TreeNode_Label"/>
+        <children xmi:id="_XZC6qQrAEfCOUb3BOx5I8g" type="TreeNode_Probability"/>
+        <children xmi:id="_XZC6qgrAEfCOUb3BOx5I8g" type="TreeNode_Variables"/>
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_XZC6qwrAEfCOUb3BOx5I8g" fontName=".AppleSystemUIFont" lineColor="0"/>
+      </children>
+      <children xmi:id="_XZC6rArAEfCOUb3BPw5I8g" type="TerminalNode" element="#_XZBtCwrAEfCOUb3Bfg5I8g">
+        <children xmi:id="_XZC6rQrAEfCOUb3BPw5I8g" type="TreeNode_Label"/>
+        <children xmi:id="_XZC6rgrAEfCOUb3BPw5I8g" type="TreeNode_Probability"/>
+        <children xmi:id="_XZC6rwrAEfCOUb3BPw5I8g" type="TreeNode_Variables"/>
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_XZC6sArAEfCOUb3BPw5I8g" fontName=".AppleSystemUIFont" lineColor="0"/>
+      </children>
+      <children xmi:id="_XZC6sQrAEfCOUb3BQv5I8g" type="ChanceNode" element="#_XZBs_grAEfCOUb3Bcj5I8g">
+        <children xmi:id="_XZC6sgrAEfCOUb3BQv5I8g" type="TreeNode_Label"/>
+        <children xmi:id="_XZC6swrAEfCOUb3BQv5I8g" type="TreeNode_Probability"/>
+        <children xmi:id="_XZC6tArAEfCOUb3BQv5I8g" type="TreeNode_Variables"/>
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_XZC6tQrAEfCOUb3BQv5I8g" fontName=".AppleSystemUIFont" lineColor="0"/>
+      </children>
+      <children xmi:id="_XZC6tgrAEfCOUb3BRu5I8g" type="TerminalNode" element="#_XZBtBgrAEfCOUb3Beh5I8g">
+        <children xmi:id="_XZC6twrAEfCOUb3BRu5I8g" type="TreeNode_Label"/>
+        <children xmi:id="_XZC6uArAEfCOUb3BRu5I8g" type="TreeNode_Probability"/>
+        <children xmi:id="_XZC6uQrAEfCOUb3BRu5I8g" type="TreeNode_Variables"/>
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_XZC6ugrAEfCOUb3BRu5I8g" fontName=".AppleSystemUIFont" lineColor="0"/>
+      </children>
+      <children xmi:id="_XZC6uwrAEfCOUb3BSt5I8g" type="TerminalNode" element="#_XZBtAQrAEfCOUb3Bdi5I8g">
+        <children xmi:id="_XZC6vArAEfCOUb3BSt5I8g" type="TreeNode_Label"/>
+        <children xmi:id="_XZC6vQrAEfCOUb3BSt5I8g" type="TreeNode_Probability"/>
+        <children xmi:id="_XZC6vgrAEfCOUb3BSt5I8g" type="TreeNode_Variables"/>
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_XZC6vwrAEfCOUb3BSt5I8g" fontName=".AppleSystemUIFont" lineColor="0"/>
+      </children>
+      <children xmi:id="_XZC6wArAEfCOUb3BTs5I8g" type="TerminalNode" element="#_XZBtHgrAEfCOUb3Bid5I8g">
+        <children xmi:id="_XZC6wQrAEfCOUb3BTs5I8g" type="TreeNode_Label"/>
+        <children xmi:id="_XZC6wgrAEfCOUb3BTs5I8g" type="TreeNode_Probability"/>
+        <children xmi:id="_XZC6wwrAEfCOUb3BTs5I8g" type="TreeNode_Variables"/>
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_XZC6xArAEfCOUb3BTs5I8g" fontName=".AppleSystemUIFont" lineColor="0"/>
+      </children>
+      <children xmi:id="_XZC6xQrAEfCOUb3BUr5I8g" type="TerminalNode" element="#_XZBtGQrAEfCOUb3Bhe5I8g">
+        <children xmi:id="_XZC6xgrAEfCOUb3BUr5I8g" type="TreeNode_Label"/>
+        <children xmi:id="_XZC6xwrAEfCOUb3BUr5I8g" type="TreeNode_Probability"/>
+        <children xmi:id="_XZC6yArAEfCOUb3BUr5I8g" type="TreeNode_Variables"/>
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_XZC6yQrAEfCOUb3BUr5I8g" fontName=".AppleSystemUIFont" lineColor="0"/>
+      </children>
+      <children xmi:id="_XZC6ygrAEfCOUb3BVq5I8g" type="TerminalNode" element="#_XZBtIQrAEfCOUb3Bjc5I8g">
+        <children xmi:id="_XZC6ywrAEfCOUb3BVq5I8g" type="TreeNode_Label"/>
+        <children xmi:id="_XZC6zArAEfCOUb3BVq5I8g" type="TreeNode_Probability"/>
+        <children xmi:id="_XZC6zQrAEfCOUb3BVq5I8g" type="TreeNode_Variables"/>
+        <styles xsi:type="notation:ShapeStyle" xmi:id="_XZC6zgrAEfCOUb3BVq5I8g" fontName=".AppleSystemUIFont" lineColor="0"/>
+      </children>
+      <styles xsi:type="notation:ShapeStyle" xmi:id="_XZC6zwrAEfCOUb3BWp5I8g" fontName="Segoe UI" lineColor="0"/>
+      <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC60ArAEfCOUb3BWp5I8g"/>
+    </children>
+    <children xmi:id="_XZC60QrAEfCOUb3BWp5I8g" type="TreeExpectedValues">
+      <children xsi:type="notation:Shape" xmi:id="_XZC60grAEfCOUb3BWp5I8g" type="ExpectedValue" element="#_XZCVHQrAEfCOUb3B_A5I8g" fontName="Segoe UI" description="Text" lineColor="0">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC60wrAEfCOUb3BWp5I8g" type="DiagramName"/>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC61ArAEfCOUb3BXo5I8g" type="Description"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC61QrAEfCOUb3BXo5I8g" x="132" y="-186"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_XZC61grAEfCOUb3BXo5I8g" type="ExpectedValue" element="#_XZCVIgrAEfCOUb3BA_5I8g" fontName=".AppleSystemUIFont" description="Text" lineColor="0">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC61wrAEfCOUb3BXo5I8g" type="DiagramName"/>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC62ArAEfCOUb3BXo5I8g" type="Description"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC62QrAEfCOUb3BYn5I8g" x="176" y="-247"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_XZC62grAEfCOUb3BYn5I8g" type="ExpectedValue" element="#_XZCVJwrAEfCOUb3BB-5I8g" fontName=".AppleSystemUIFont" description="Text" lineColor="0">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC62wrAEfCOUb3BYn5I8g" type="DiagramName"/>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC63ArAEfCOUb3BYn5I8g" type="Description"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC63QrAEfCOUb3BYn5I8g" x="176" y="-247"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_XZC63grAEfCOUb3BZm5I8g" type="ExpectedValue" element="#_XZCVLQrAEfCOUb3BD85I8g" fontName=".AppleSystemUIFont" description="Text" lineColor="0">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC63wrAEfCOUb3BZm5I8g" type="DiagramName"/>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC64ArAEfCOUb3BZm5I8g" type="Description"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC64QrAEfCOUb3BZm5I8g" x="176" y="-247"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_XZC64grAEfCOUb3BZm5I8g" type="ExpectedValue" element="#_XZCVMgrAEfCOUb3BE75I8g" fontName=".AppleSystemUIFont" description="Text" lineColor="0">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC64wrAEfCOUb3Bal5I8g" type="DiagramName"/>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC65ArAEfCOUb3Bal5I8g" type="Description"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC65QrAEfCOUb3Bal5I8g" x="176" y="-247"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_XZC65grAEfCOUb3Bal5I8g" type="ExpectedValue" element="#_XZCVNwrAEfCOUb3BF65I8g" fontName=".AppleSystemUIFont" description="Text" lineColor="0">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC65wrAEfCOUb3Bal5I8g" type="DiagramName"/>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC66ArAEfCOUb3Bbk5I8g" type="Description"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC66QrAEfCOUb3Bbk5I8g" x="176" y="-247"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_XZC66grAEfCOUb3Bbk5I8g" type="ExpectedValue" element="#_XZCVPArAEfCOUb3BG55I8g" fontName=".AppleSystemUIFont" description="Text" lineColor="0">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC66wrAEfCOUb3Bbk5I8g" type="DiagramName"/>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC67ArAEfCOUb3Bbk5I8g" type="Description"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC67QrAEfCOUb3Bcj5I8g" x="176" y="-247"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_XZC67grAEfCOUb3Bcj5I8g" type="ExpectedValue" element="#_XZCVQQrAEfCOUb3BH45I8g" fontName=".AppleSystemUIFont" description="Text" lineColor="0">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC67wrAEfCOUb3Bcj5I8g" type="DiagramName"/>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC68ArAEfCOUb3Bcj5I8g" type="Description"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC68QrAEfCOUb3Bcj5I8g" x="176" y="-247"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_XZC68grAEfCOUb3Bdi5I8g" type="ExpectedValue" element="#_XZCVRgrAEfCOUb3BI35I8g" fontName=".AppleSystemUIFont" description="Text" lineColor="0">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC68wrAEfCOUb3Bdi5I8g" type="DiagramName"/>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC69ArAEfCOUb3Bdi5I8g" type="Description"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC69QrAEfCOUb3Bdi5I8g" x="176" y="-247"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_XZC69grAEfCOUb3Bdi5I8g" type="ExpectedValue" element="#_XZCVSwrAEfCOUb3BJ25I8g" fontName=".AppleSystemUIFont" description="Text" lineColor="0">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC69wrAEfCOUb3Beh5I8g" type="DiagramName"/>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC6-ArAEfCOUb3Beh5I8g" type="Description"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC6-QrAEfCOUb3Beh5I8g" x="176" y="-247"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_XZC6-grAEfCOUb3Beh5I8g" type="ExpectedValue" element="#_XZC6kwrAEfCOUb3BK15I8g" fontName=".AppleSystemUIFont" description="Text" lineColor="0">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC6-wrAEfCOUb3Beh5I8g" type="DiagramName"/>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC6_ArAEfCOUb3Bfg5I8g" type="Description"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC6_QrAEfCOUb3Bfg5I8g" x="176" y="-247"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_XZC6_grAEfCOUb3Bfg5I8g" type="ExpectedValue" element="#_XZC6mArAEfCOUb3BL05I8g" fontName=".AppleSystemUIFont" description="Text" lineColor="0">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC6_wrAEfCOUb3Bfg5I8g" type="DiagramName"/>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7AArAEfCOUb3Bfg5I8g" type="Description"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC7AQrAEfCOUb3Bgf5I8g" x="176" y="-247"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_XZC7AgrAEfCOUb3Bgf5I8g" type="ExpectedValue" element="#_XZC6nQrAEfCOUb3BMz5I8g" fontName=".AppleSystemUIFont" description="Text" lineColor="0">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7AwrAEfCOUb3Bgf5I8g" type="DiagramName"/>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7BArAEfCOUb3Bgf5I8g" type="Description"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC7BQrAEfCOUb3Bgf5I8g" x="176" y="-247"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_XZC7BgrAEfCOUb3Bhe5I8g" type="ExpectedValue" element="#_XZC6ogrAEfCOUb3BNy5I8g" fontName=".AppleSystemUIFont" description="Text" lineColor="0">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7BwrAEfCOUb3Bhe5I8g" type="DiagramName"/>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7CArAEfCOUb3Bhe5I8g" type="Description"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC7CQrAEfCOUb3Bhe5I8g" x="176" y="-247"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_XZC7CgrAEfCOUb3Bhe5I8g" type="ExpectedValue" element="#_XZC6pwrAEfCOUb3BOx5I8g" fontName=".AppleSystemUIFont" description="Text" lineColor="0">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7CwrAEfCOUb3Bid5I8g" type="DiagramName"/>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7DArAEfCOUb3Bid5I8g" type="Description"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC7DQrAEfCOUb3Bid5I8g" x="176" y="-247"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_XZC7DgrAEfCOUb3Bid5I8g" type="ExpectedValue" element="#_XZC6rArAEfCOUb3BPw5I8g" fontName=".AppleSystemUIFont" description="Text" lineColor="0">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7DwrAEfCOUb3Bid5I8g" type="DiagramName"/>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7EArAEfCOUb3Bjc5I8g" type="Description"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC7EQrAEfCOUb3Bjc5I8g" x="177" y="-247"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_XZC7EgrAEfCOUb3Bjc5I8g" type="ExpectedValue" element="#_XZC6sQrAEfCOUb3BQv5I8g" fontName=".AppleSystemUIFont" description="Text" lineColor="0">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7EwrAEfCOUb3Bjc5I8g" type="DiagramName"/>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7FArAEfCOUb3Bjc5I8g" type="Description"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC7FQrAEfCOUb3Bkb5I8g" x="177" y="-247"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_XZC7FgrAEfCOUb3Bkb5I8g" type="ExpectedValue" element="#_XZC6tgrAEfCOUb3BRu5I8g" fontName=".AppleSystemUIFont" description="Text" lineColor="0">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7FwrAEfCOUb3Bkb5I8g" type="DiagramName"/>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7GArAEfCOUb3Bkb5I8g" type="Description"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC7GQrAEfCOUb3Bkb5I8g" x="177" y="-247"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_XZC7GgrAEfCOUb3Bla5I8g" type="ExpectedValue" element="#_XZC6uwrAEfCOUb3BSt5I8g" fontName=".AppleSystemUIFont" description="Text" lineColor="0">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7GwrAEfCOUb3Bla5I8g" type="DiagramName"/>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7HArAEfCOUb3Bla5I8g" type="Description"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC7HQrAEfCOUb3Bla5I8g" x="177" y="-247"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_XZC7HgrAEfCOUb3Bla5I8g" type="ExpectedValue" element="#_XZC6wArAEfCOUb3BTs5I8g" fontName=".AppleSystemUIFont" description="Text" lineColor="0">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7HwrAEfCOUb3BmZ5I8g" type="DiagramName"/>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7IArAEfCOUb3BmZ5I8g" type="Description"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC7IQrAEfCOUb3BmZ5I8g" x="177" y="-247"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_XZC7IgrAEfCOUb3BmZ5I8g" type="ExpectedValue" element="#_XZC6xQrAEfCOUb3BUr5I8g" fontName=".AppleSystemUIFont" description="Text" lineColor="0">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7IwrAEfCOUb3BmZ5I8g" type="DiagramName"/>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7JArAEfCOUb3BnY5I8g" type="Description"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC7JQrAEfCOUb3BnY5I8g" x="177" y="-247"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_XZC7JgrAEfCOUb3BnY5I8g" type="ExpectedValue" element="#_XZC6ygrAEfCOUb3BVq5I8g" fontName=".AppleSystemUIFont" description="Text" lineColor="0">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7JwrAEfCOUb3BnY5I8g" type="DiagramName"/>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7KArAEfCOUb3BnY5I8g" type="Description"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC7KQrAEfCOUb3BoX5I8g" x="177" y="-247"/>
+      </children>
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:id="_XZC7KgrAEfCOUb3BoX5I8g" type="TreeTables">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:id="_XZC7KwrAEfCOUb3BoX5I8g" type="TreeDocument_Notes">
+      <children xsi:type="notation:Shape" xmi:id="_XZC7LArAEfCOUb3BoX5I8g" type="Note" fontName=".AppleSystemUIFont" description="Cyclelength = 1 month" fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7LQrAEfCOUb3BoX5I8g" type="DiagramName">
+          <element xsi:nil="true"/>
+        </children>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7LgrAEfCOUb3BpW5I8g" type="Description">
+          <element xsi:nil="true"/>
+        </children>
+        <styles xsi:type="notation:TextStyle" xmi:id="_XZC7LwrAEfCOUb3BpW5I8g"/>
+        <styles xsi:type="notation:LineTypeStyle" xmi:id="_XZC7MArAEfCOUb3BpW5I8g"/>
+        <element xsi:nil="true"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC7MQrAEfCOUb3BpW5I8g" x="774" y="26598"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_XZC7MgrAEfCOUb3BpW5I8g" type="Note" fontName=".AppleSystemUIFont" description="Base case = cohort age 45 years old" fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7MwrAEfCOUb3BqV5I8g" type="DiagramName">
+          <element xsi:nil="true"/>
+        </children>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7NArAEfCOUb3BqV5I8g" type="Description">
+          <element xsi:nil="true"/>
+        </children>
+        <styles xsi:type="notation:TextStyle" xmi:id="_XZC7NQrAEfCOUb3BqV5I8g"/>
+        <styles xsi:type="notation:LineTypeStyle" xmi:id="_XZC7NgrAEfCOUb3BqV5I8g"/>
+        <element xsi:nil="true"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC7NwrAEfCOUb3BqV5I8g" x="775" y="27974"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_XZC7OArAEfCOUb3BrU5I8g" type="Note" fontName=".AppleSystemUIFont" description="Assume that patient will pass away at 90 years old (Termination condition = 540 cycle - from 45 years to 90)" fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7OQrAEfCOUb3BrU5I8g" type="DiagramName">
+          <element xsi:nil="true"/>
+        </children>
+        <children xsi:type="notation:BasicDecorationNode" xmi:id="_XZC7OgrAEfCOUb3BrU5I8g" type="Description">
+          <element xsi:nil="true"/>
+        </children>
+        <styles xsi:type="notation:TextStyle" xmi:id="_XZC7OwrAEfCOUb3BrU5I8g"/>
+        <styles xsi:type="notation:LineTypeStyle" xmi:id="_XZC7PArAEfCOUb3BrU5I8g"/>
+        <element xsi:nil="true"/>
+        <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XZC7PQrAEfCOUb3BsT5I8g" x="15942" y="29631" width="14452" height="1619"/>
+      </children>
+      <element xsi:nil="true"/>
+    </children>
+    <styles xsi:type="notation:DiagramStyle" xmi:id="_XZC7PgrAEfCOUb3BsT5I8g">
+      <verticalGuides xmi:id="_XZC7PwrAEfCOUb3BsT5I8g" position="477">
+        <nodeMap xmi:id="_XZC7QArAEfCOUb3BsT5I8g" value="Right" key="#_XZCVHQrAEfCOUb3B_A5I8g"/>
+      </verticalGuides>
+      <verticalGuides xmi:id="_XZC7QQrAEfCOUb3BsT5I8g" position="875">
+        <nodeMap xmi:id="_XZC7QgrAEfCOUb3BtS5I8g" value="Right" key="#_XZCVIgrAEfCOUb3BA_5I8g"/>
+        <nodeMap xmi:id="_XZC7QwrAEfCOUb3BtS5I8g" value="Right" key="#_XZCVJwrAEfCOUb3BB-5I8g"/>
+        <nodeMap xmi:id="_XZC7RArAEfCOUb3BtS5I8g" value="Right" key="#_XZCVLQrAEfCOUb3BD85I8g"/>
+      </verticalGuides>
+      <verticalGuides xmi:id="_XZC7RQrAEfCOUb3BtS5I8g" position="1343">
+        <nodeMap xmi:id="_XZC7RgrAEfCOUb3BtS5I8g" value="Right" key="#_XZCVMgrAEfCOUb3BE75I8g"/>
+        <nodeMap xmi:id="_XZC7RwrAEfCOUb3BuR5I8g" value="Right" key="#_XZCVNwrAEfCOUb3BF65I8g"/>
+        <nodeMap xmi:id="_XZC7SArAEfCOUb3BuR5I8g" value="Right" key="#_XZCVPArAEfCOUb3BG55I8g"/>
+        <nodeMap xmi:id="_XZC7SQrAEfCOUb3BuR5I8g" value="Right" key="#_XZC6ygrAEfCOUb3BVq5I8g"/>
+      </verticalGuides>
+      <verticalGuides xmi:id="_XZC7SgrAEfCOUb3BuR5I8g" position="1571">
+        <nodeMap xmi:id="_XZC7SwrAEfCOUb3BuR5I8g" value="Right" key="#_XZCVQQrAEfCOUb3BH45I8g"/>
+        <nodeMap xmi:id="_XZC7TArAEfCOUb3BvQ5I8g" value="Right" key="#_XZCVRgrAEfCOUb3BI35I8g"/>
+        <nodeMap xmi:id="_XZC7TQrAEfCOUb3BvQ5I8g" value="Right" key="#_XZC6rArAEfCOUb3BPw5I8g"/>
+        <nodeMap xmi:id="_XZC7TgrAEfCOUb3BvQ5I8g" value="Right" key="#_XZC6sQrAEfCOUb3BQv5I8g"/>
+        <nodeMap xmi:id="_XZC7TwrAEfCOUb3BvQ5I8g" value="Right" key="#_XZC6wArAEfCOUb3BTs5I8g"/>
+        <nodeMap xmi:id="_XZC7UArAEfCOUb3BvQ5I8g" value="Right" key="#_XZC6xQrAEfCOUb3BUr5I8g"/>
+      </verticalGuides>
+      <verticalGuides xmi:id="_XZC7UQrAEfCOUb3BwP5I8g" position="1849">
+        <nodeMap xmi:id="_XZC7UgrAEfCOUb3BwP5I8g" value="Right" key="#_XZCVSwrAEfCOUb3BJ25I8g"/>
+        <nodeMap xmi:id="_XZC7UwrAEfCOUb3BwP5I8g" value="Right" key="#_XZC6kwrAEfCOUb3BK15I8g"/>
+        <nodeMap xmi:id="_XZC7VArAEfCOUb3BwP5I8g" value="Right" key="#_XZC6tgrAEfCOUb3BRu5I8g"/>
+        <nodeMap xmi:id="_XZC7VQrAEfCOUb3BwP5I8g" value="Right" key="#_XZC6uwrAEfCOUb3BSt5I8g"/>
+      </verticalGuides>
+      <verticalGuides xmi:id="_XZC7VgrAEfCOUb3BxO5I8g" position="2077">
+        <nodeMap xmi:id="_XZC7VwrAEfCOUb3BxO5I8g" value="Right" key="#_XZC6mArAEfCOUb3BL05I8g"/>
+        <nodeMap xmi:id="_XZC7WArAEfCOUb3BxO5I8g" value="Right" key="#_XZC6nQrAEfCOUb3BMz5I8g"/>
+      </verticalGuides>
+      <verticalGuides xmi:id="_XZC7WQrAEfCOUb3BxO5I8g" position="2360">
+        <nodeMap xmi:id="_XZC7WgrAEfCOUb3BxO5I8g" value="Right" key="#_XZC6ogrAEfCOUb3BNy5I8g"/>
+        <nodeMap xmi:id="_XZC7WwrAEfCOUb3ByN5I8g" value="Right" key="#_XZC6pwrAEfCOUb3BOx5I8g"/>
+      </verticalGuides>
+    </styles>
+  </notation:Diagram>
+</xmi:XMI>
