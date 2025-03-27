@@ -1,0 +1,1 @@
+A TreeAge Pro 2025 model for comparing the cost-effectiveness of three alternative strategies treating medial compartmental OA knee. Includes data, scripts, and setup instructions to facilitate replication and further research in this domain. By Pakpoom Ruangsomboon MD, MSc
